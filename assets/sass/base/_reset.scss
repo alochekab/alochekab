@@ -1,8 +1,13 @@
+ /* لینک فایلی که وظیفه بارگذاری فونت ها را برعهده دارد */
+@import url(_fontFamily.scss);
+
 *::after, *::before{
     padding: 0;
     margin: 0;
 }
-
+h1, h2, h3, h4, h5, h6,input, textarea {
+	font-family: iranyekan !important;
+}
 html {
     font-size:62.5%; // 10px => 1rem
     @include phone-sm{
@@ -11,7 +16,7 @@ html {
   }
   
   body {
-    font-family: '';
+    font-family: iranyekan  !important;
   }
   
   ul {
