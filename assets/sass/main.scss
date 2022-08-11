@@ -1,29 +1,24 @@
-@import 'abstracts/variables';
-@import 'abstracts/functions';
-@import 'abstracts/mixins';
+@import "abstract/variables";
+@import "abstract/functions";
+@import "abstract/mixins";
 
-@import 'base/reset';
-@import 'base/typography';
-@import 'base/fontFamily';
+@import "base/reset";
+@import "base/typography";
+@import "base/fontFamily";
 
+@import "layouts/grid";
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/sidebar";
+@import "layouts/forms";
 
-@import 'layouts/grid';
-@import 'layouts/header';
-@import 'layouts/footer';
-@import 'layouts/sidebar';
-@import 'layouts/forms';
+@import "components/buttons";
+@import "components/carousel";
+@import "components/slider";
 
-@import 'components/buttons';
-@import 'components/carousel';
-@import 'components/slider';
+@import "pages/home";
+@import "pages/about";
+@import "pages/contact";
 
-@import 'pages/home';
-@import 'pages/about';
-@import 'pages/contact';
-
-@import 'themes/theme';
-@import 'themes/admin';
-
-
-
-
+@import "themes/theme";
+@import "themes/admin";
