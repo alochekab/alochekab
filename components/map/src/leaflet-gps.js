@@ -41,12 +41,10 @@ L.Control.Gps = L.Control.extend({
 		title: 'Center map on your location',
 		marker: null,			//L.Marker used for location, default use a L.CircleMarker
 		style: {				//default L.CircleMarker styles
-			radius: 5,
-			weight: 1,
-			color: '#c20',
-			opacity: 1,
-			fillColor: '#f23',
-			fillOpacity: 1,
+			color: 'red',
+			fillColor: '#f03',
+			fillOpacity: 0.5,
+			radius: 500
 
 
 		},

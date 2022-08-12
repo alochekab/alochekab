@@ -20,12 +20,19 @@
 <script src="./dist/leaflet.js"></script>
 <script src="./src/leaflet-gps.js"></script>
 <script>
+	// config map
 	var map = new L.Map('map', 
 	{
 		zoom: 12,
 		center: new L.latLng([35.70163, 51.39211]),
 
 	 });
+	//  google layer map
+	 googleStreets = L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',{
+    maxZoom: 20,
+
+    subdomains:['mt0','mt1','mt2','mt3']
+});
 	 var loc = L.icon({
 		iconUrl: './images/loc.png',
 
@@ -38,7 +45,7 @@
 	 var marker = L.marker(
 			[35.70163, 51.39211],
 			{
-				draggable: true,
+				draggable: false,
 				title: "",
 				opacity: 1,
 				icon:loc,
@@ -46,18 +53,14 @@
 
 			});
 
-		marker.addTo(map) .openPopup();
-		marker.addEventListener('click', function (){
-			document.querySelector('#location').value=marker['_latlng']
-			console.log(marker['_latlng']);
-
-		})
-
-	map.addLayer(new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'));	//base layer
+		
+	//base layer
+	map.addLayer(googleStreets);	
 
 	var gps = new L.Control.Gps({
-		//autoActive:true,
+		// autoActive:true,
 		autoCenter:true
+		
 	});//inizialize control
 
 	gps
@@ -65,20 +68,82 @@
 			// e.marker.bindPopup(e.latlng.toString()).openPopup()
 		// console.log(e.latlng, map.getCenter())
 		// console.log(map['_lastCenter']);
+		marker.setLatLng(new L.LatLng(map['_lastCenter']['lat'], map['_lastCenter']['lng']))
+		map.locate({setView: true, maxZoom: 18});  
+
+
 
 	})
 	.on('gps:disabled', function(e) {
 		e.marker.closePopup()
-		console.log(map['_lastCenter']);
 		marker.setLatLng(new L.LatLng(map['_lastCenter']['lat'], map['_lastCenter']['lng']))
+		map.locate({setView: true, maxZoom: 18});  
+
 
 	});
-	// lat: 35.70163, lng: 51.39211}
-	// map['_lastCenter']['lat'], map['_lastCenter']['let']
-	gps.addTo(map);
 
+	// isactive gps btn
+	gps.addTo(map);
+	// **********************************
+	// **********************************
+	// **********************************
+	map.locate({setView: true, maxZoom: 25});  
+	setTimeout(() => {
+		marker.setLatLng(new L.LatLng(map['_lastCenter']['lat'], map['_lastCenter']['lng']))
+	}, 1000);
+
+	// **********************************
+	// **********************************
+	// **********************************
+
+	// position fixed marker
+	map.on('move', function () {
+		marker.setLatLng(map.getCenter());
+		//console.log(map.getCenter());
+	});
+	//Dragend event of map for update marker position
+	map.on('dragend', function(e) {
+		var cnt = map.getCenter();
+	        var position = marker.getLatLng();
+		lat = Number(position['lat']).toFixed(5);
+		lng = Number(position['lng']).toFixed(5);
+		
+	});
+
+	// **********************************
+	// **********************************
+	// **********************************
+	// end select 
+	marker.addTo(map);
+
+	document.querySelector('.leaflet-marker-icon').addEventListener('click', function (){
+			document.querySelector('#location').value=marker['_latlng']
+			map.locate({setView: true, maxZoom: 18}); 	
+			document.querySelector('.alarm').classList.add('active') 
+			document.querySelector('.alarm').innerHTML = marker
+
+		})
 
 </script>
+<div class="alarm">
+	انتخاب شد
+</div>
+<style>
+	.alarm{
+		position: absolute;
+		width: 100%;
+		height: 10rem;
+		background-color: #fff;
+		box-shadow: 0 0 2px 1px #eee;
+		bottom: 0;
+		z-index: 9999;
+		display: none;
+
+	}
+	.active.alarm{
+		display: block;
+	}
+</style>
 
 </body>
 </html>
