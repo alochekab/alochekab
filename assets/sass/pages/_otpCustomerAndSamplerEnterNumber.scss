@@ -1,7 +1,4 @@
-// @font-face {
-//   font-family: iranyekanwebblack;
-//   src: url("/assets/sass/fonts/ttf/IRANYekanWebBlack.ttf");
-// }
+//TODO: need to add some animations to the menu, to pop up.
 
 .enternum-body {
   background-color: $light--green;
@@ -94,10 +91,6 @@
 
   &::placeholder {
     font-family: iranyekan300;
-  }
-
-  &:focus::placeholder {
-    // color: transparent;
   }
 
   &:focus::placeholder:active {
