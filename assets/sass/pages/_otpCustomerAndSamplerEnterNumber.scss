@@ -80,7 +80,7 @@
   border-bottom-color: rgba(0, 0, 0, 0.158);
   border-bottom-style: solid;
   outline: none;
-  width: 100%;
+  width: 99.2%;
   margin-top: 15px;
   height: 49px;
   font-size: 16px;
@@ -88,6 +88,8 @@
   font-weight: -100;
   padding-right: 13px;
   // font-weight: 800;
+  background: url(/assets/images/green-dot.png) no-repeat scroll 7px 23px;
+  background-size: 9px;
 
   &::placeholder {
     font-family: iranyekan300;
@@ -106,13 +108,17 @@
   }
 }
 
-.number-panel_doticon {
-  width: 9px;
-  height: auto;
-  position: absolute;
-  right: 188rem;
-  bottom: 12.6rem;
-}
+// .number-panel_doticon {
+//   width: 9px;
+//   height: auto;
+//   float: left;
+
+//   margin-left: 0.7rem;
+//   // margin-top: -20px;
+//   // position: absolute;
+//   // right: 188rem;
+//   // bottom: 12.6rem;
+// }
 
 .number-panel_submit {
   width: 6%;
@@ -122,11 +128,16 @@
   background-color: #00cc6d;
   color: white;
   font-family: iranyekan800;
-  position: absolute;
-  // right: 178rem;
-  left: 2.7rem;
-  bottom: 3.5rem;
+  float: left;
+  margin-top: 20pt;
   &:active {
     background-color: #07b864;
   }
+}
+
+//Classes For JS :
+//TODO: add some animations
+.fullscreen_numpanel {
+  width: 100%;
+  height: 100%;
 }
