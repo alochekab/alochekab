@@ -13,7 +13,7 @@
 .center-logo-containor {
   display: grid;
   place-items: center;
-  min-height: 90vh;
+  min-height: 70vh;
 }
 
 .center-logo {
@@ -23,8 +23,8 @@
 }
 
 .center-logo_img {
-  max-width: 180px;
-  height: 180px;
+  max-width: 150px;
+  height: 150px;
 }
 
 .number-panel {
@@ -89,6 +89,7 @@
   font-size: 16px;
   font-family: iranyekan100;
   font-weight: -100;
+  padding-right: 13px;
   // font-weight: 800;
 
   &::placeholder {
@@ -96,13 +97,43 @@
   }
 
   &:focus::placeholder {
+    // color: transparent;
+  }
+
+  &:focus::placeholder:active {
     color: transparent;
   }
+
   &:focus {
     border-bottom-width: 1px;
     border-bottom-color: black;
     border-bottom-style: solid;
     width: 99.2%;
-    padding-right: 16px;
+    // padding-right: 16px;
+  }
+}
+
+.number-panel_doticon {
+  width: 9px;
+  height: auto;
+  position: absolute;
+  right: 188rem;
+  bottom: 12.6rem;
+}
+
+.number-panel_submit {
+  width: 6%;
+  height: 43px;
+  border-color: transparent;
+  border-radius: 5px;
+  background-color: #00cc6d;
+  color: white;
+  font-family: iranyekan800;
+  position: absolute;
+  // right: 178rem;
+  left: 2.7rem;
+  bottom: 3.5rem;
+  &:active {
+    background-color: #07b864;
   }
 }

@@ -181,7 +181,7 @@ button {
 .center-logo-containor {
   display: grid;
   place-items: center;
-  min-height: 90vh; }
+  min-height: 70vh; }
 
 .center-logo {
   background-color: inherit;
@@ -189,8 +189,8 @@ button {
   height: auto; }
 
 .center-logo_img {
-  max-width: 180px;
-  height: 180px; }
+  max-width: 150px;
+  height: 150px; }
 
 .number-panel {
   width: 100%;
@@ -242,17 +242,38 @@ button {
   height: 49px;
   font-size: 16px;
   font-family: iranyekan100;
-  font-weight: -100; }
+  font-weight: -100;
+  padding-right: 13px; }
   .number-panel_phone-input::placeholder {
     font-family: iranyekan300; }
-  .number-panel_phone-input:focus::placeholder {
+  .number-panel_phone-input:focus::placeholder:active {
     color: transparent; }
   .number-panel_phone-input:focus {
     border-bottom-width: 1px;
     border-bottom-color: black;
     border-bottom-style: solid;
-    width: 99.2%;
-    padding-right: 16px; }
+    width: 99.2%; }
+
+.number-panel_doticon {
+  width: 9px;
+  height: auto;
+  position: absolute;
+  right: 188rem;
+  bottom: 12.6rem; }
+
+.number-panel_submit {
+  width: 6%;
+  height: 43px;
+  border-color: transparent;
+  border-radius: 5px;
+  background-color: #00cc6d;
+  color: white;
+  font-family: iranyekan800;
+  position: absolute;
+  left: 2.7rem;
+  bottom: 3.5rem; }
+  .number-panel_submit:active {
+    background-color: #07b864; }
 
 @font-face {
   font-family: iranyekan;
