@@ -1,0 +1,25 @@
+.enternum-body {
+  background-color: $light--green;
+  overflow: hidden;
+}
+
+.center-logo-containor {
+  display: grid;
+  place-items: center;
+  min-height: 90vh;
+}
+
+.center-logo {
+  background-color: inherit;
+  width: 6.3%;
+  height: auto;
+}
+
+.center-logo_img {
+  max-width: 180px;
+  height: 180px;
+}
+
+.number-panel {
+  background-color: gray;
+}
