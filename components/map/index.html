@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="https://www.w3.org/1999/xhtml"> 
+<head> 
+<title>Leaflet.Control.Gps - Simple Example</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+
+<link rel="stylesheet" href="./dist/leaflet.css" />
+
+<link rel="stylesheet" href="./src/leaflet-gps.css" />
+<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<div id="map"></div>
+
+<input type="hidden" id="location">
+
+<script src="./dist/leaflet.js"></script>
+<script src="./src/leaflet-gps.js"></script>
+<script>
+	var map = new L.Map('map', 
+	{
+		zoom: 12,
+		center: new L.latLng([35.70163, 51.39211]),
+
+	 });
+	 var loc = L.icon({
+		iconUrl: './images/loc.png',
+
+		iconSize: [250, 250], // size of the icon
+		shadowSize:   [250, 250], // size of the shadow
+		// iconAnchor:   [50, 24], // point of the icon which will correspond to marker's location
+		shadowAnchor: [1, 1],  // the same for the shadow
+		// popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+	});
+	 var marker = L.marker(
+			[35.70163, 51.39211],
+			{
+				draggable: true,
+				title: "",
+				opacity: 1,
+				icon:loc,
+
+
+			});
+
+		marker.addTo(map) .openPopup();
+		marker.addEventListener('click', function (){
+			document.querySelector('#location').value=marker['_latlng']
+			console.log(marker['_latlng']);
+
+		})
+
+	map.addLayer(new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'));	//base layer
+
+	var gps = new L.Control.Gps({
+		//autoActive:true,
+		autoCenter:true
+	});//inizialize control
+
+	gps
+	.on('gps:located', function(e) {
+			// e.marker.bindPopup(e.latlng.toString()).openPopup()
+		// console.log(e.latlng, map.getCenter())
+		// console.log(map['_lastCenter']);
+
+	})
+	.on('gps:disabled', function(e) {
+		e.marker.closePopup()
+		console.log(map['_lastCenter']);
+		marker.setLatLng(new L.LatLng(map['_lastCenter']['lat'], map['_lastCenter']['lng']))
+
+	});
+	// lat: 35.70163, lng: 51.39211}
+	// map['_lastCenter']['lat'], map['_lastCenter']['let']
+	gps.addTo(map);
+
+
+</script>
+
+</body>
+</html>
