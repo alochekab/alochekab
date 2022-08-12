@@ -53,49 +53,49 @@ button {
   src: url("/assets/sass/fonts/eot/iranyekanwebbold.eot?#iefix") format("embedded-opentype"), url("/assets/sass/fonts/woff/iranyekanwebbold.woff") format("woff"), url("/assets/sass/fonts/woff2/iranyekanwebbold.woff2") format("woff2"), url("/assets/sass/fonts/ttf/iranyekanwebbold.ttf") format("truetype"); }
 
 @font-face {
-  font-family: iranyekan;
+  font-family: iranyekan100;
   font-style: normal;
   font-weight: 100;
   src: url("/assets/sass/fonts/eot/iranyekanwebthin.eot");
   src: url("/assets/sass/fonts/eot/iranyekanwebthin.eot?#iefix") format("embedded-opentype"), url("/assets/sass/fonts/woff/iranyekanwebthin.woff") format("woff"), url("/assets/sass/fonts/woff2/iranyekanwebthin.woff2") format("woff2"), url("/assets/sass/fonts/ttf/iranyekanwebthin.ttf") format("truetype"); }
 
 @font-face {
-  font-family: iranyekan;
+  font-family: iranyekan300;
   font-style: normal;
   font-weight: 300;
   src: url("/assets/sass/fonts/eot/iranyekanweblight.eot");
   src: url("/assets/sass/fonts/eot/iranyekanweblight.eot?#iefix") format("embedded-opentype"), url("/assets/sass/fonts/woff/iranyekanweblight.woff") format("woff"), url("/assets/sass/fonts/woff2/iranyekanweblight.woff2") format("woff2"), url("/assets/sass/fonts/ttf/iranyekanweblight.ttf") format("truetype"); }
 
 @font-face {
-  font-family: iranyekan;
+  font-family: iranyekanNormal;
   font-style: normal;
   font-weight: normal;
   src: url("/assets/sass/fonts/eot/iranyekanwebregular.eot");
   src: url("/assets/sass/fonts/eot/iranyekanwebregular.eot?#iefix") format("embedded-opentype"), url("/assets/sass/fonts/woff/iranyekanwebregular.woff") format("woff"), url("/assets/sass/fonts/woff2/iranyekanwebregular.woff2") format("woff2"), url("/assets/sass/fonts/ttf/iranyekanwebregular.ttf") format("truetype"); }
 
 @font-face {
-  font-family: iranyekan;
+  font-family: iranyekan500;
   font-style: normal;
   font-weight: 500;
   src: url("/assets/sass/fonts/eot/iranyekanwebmedium.eot");
   src: url("/assets/sass/fonts/eot/iranyekanwebmedium.eot?#iefix") format("embedded-opentype"), url("/assets/sass/fonts/woff/iranyekanwebmedium.woff") format("woff"), url("/assets/sass/fonts/woff2/iranyekanwebmedium.woff2") format("woff2"), url("/assets/sass/fonts/ttf/iranyekanwebmedium.ttf") format("truetype"); }
 
 @font-face {
-  font-family: iranyekan;
+  font-family: iranyekan800;
   font-style: normal;
   font-weight: 800;
   src: url("/assets/sass/fonts/eot/iranyekanwebextrabold.eot");
   src: url("/assets/sass/fonts/eot/iranyekanwebextrabold.eot?#iefix") format("embedded-opentype"), url("/assets/sass/fonts/woff/iranyekanwebextrabold.woff") format("woff"), url("/assets/sass/fonts/woff2/iranyekanwebextrabold.woff2") format("woff2"), url("/assets/sass/fonts/ttf/iranyekanwebextrabold.ttf") format("truetype"); }
 
 @font-face {
-  font-family: iranyekan;
+  font-family: iranyekan850;
   font-style: normal;
   font-weight: 850;
   src: url("/assets/sass/fonts/eot/iranyekanwebblack.eot");
   src: url("/assets/sass/fonts/eot/iranyekanwebblack.eot?#iefix") format("embedded-opentype"), url("/assets/sass/fonts/woff/iranyekanwebblack.woff") format("woff"), url("/assets/sass/fonts/woff2/iranyekanwebblack.woff2") format("woff2"), url("/assets/sass/fonts/ttf/iranyekanwebblack.ttf") format("truetype"); }
 
 @font-face {
-  font-family: iranyekan;
+  font-family: iranyekan900;
   font-style: normal;
   font-weight: 900;
   src: url("/assets/sass/fonts/eot/iranyekanwebextrablack.eot");
@@ -194,7 +194,7 @@ button {
 
 .number-panel {
   width: 100%;
-  height: 30%;
+  height: 35%;
   position: fixed;
   bottom: 0;
   background-color: white;
@@ -208,12 +208,51 @@ button {
   -ms-user-select: none; }
 
 .number-welcome-text {
-  font-weight: bolder;
-  font-size: 24px; }
+  font-weight: 700;
+  font-size: 20px;
+  font-family: iranyekan500; }
 
 .number-panel_content-container {
   height: 85%;
-  margin: 10px 25px 0 25px; }
+  margin: 36px 25px 0 25px; }
+
+.number-des {
+  margin-top: 33px;
+  font-size: 16px;
+  font-family: iranyekan100;
+  font-weight: 600;
+  color: black; }
+
+.number-panel_input-field {
+  margin-top: 37px; }
+
+.num-label {
+  font-size: 16px;
+  font-family: iranyekan500;
+  font-weight: 600; }
+
+.number-panel_phone-input {
+  border: none;
+  border-bottom-width: 1px;
+  border-bottom-color: rgba(0, 0, 0, 0.158);
+  border-bottom-style: solid;
+  outline: none;
+  width: 100%;
+  margin-top: 15px;
+  height: 49px;
+  font-size: 16px;
+  font-family: iranyekan100;
+  font-weight: -100; }
+  .number-panel_phone-input::placeholder {
+    font-family: iranyekan300; }
+  .number-panel_phone-input:focus::placeholder {
+    color: transparent; }
+  .number-panel_phone-input:focus {
+    border-bottom-width: 1px;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    width: 99.2%;
+    padding-right: 16px; }
 
 @font-face {
   font-family: iranyekan;
@@ -223,49 +262,49 @@ button {
   src: url("/assets/sass/fonts/eot/iranyekanwebbold.eot?#iefix") format("embedded-opentype"), url("/assets/sass/fonts/woff/iranyekanwebbold.woff") format("woff"), url("/assets/sass/fonts/woff2/iranyekanwebbold.woff2") format("woff2"), url("/assets/sass/fonts/ttf/iranyekanwebbold.ttf") format("truetype"); }
 
 @font-face {
-  font-family: iranyekan;
+  font-family: iranyekan100;
   font-style: normal;
   font-weight: 100;
   src: url("/assets/sass/fonts/eot/iranyekanwebthin.eot");
   src: url("/assets/sass/fonts/eot/iranyekanwebthin.eot?#iefix") format("embedded-opentype"), url("/assets/sass/fonts/woff/iranyekanwebthin.woff") format("woff"), url("/assets/sass/fonts/woff2/iranyekanwebthin.woff2") format("woff2"), url("/assets/sass/fonts/ttf/iranyekanwebthin.ttf") format("truetype"); }
 
 @font-face {
-  font-family: iranyekan;
+  font-family: iranyekan300;
   font-style: normal;
   font-weight: 300;
   src: url("/assets/sass/fonts/eot/iranyekanweblight.eot");
   src: url("/assets/sass/fonts/eot/iranyekanweblight.eot?#iefix") format("embedded-opentype"), url("/assets/sass/fonts/woff/iranyekanweblight.woff") format("woff"), url("/assets/sass/fonts/woff2/iranyekanweblight.woff2") format("woff2"), url("/assets/sass/fonts/ttf/iranyekanweblight.ttf") format("truetype"); }
 
 @font-face {
-  font-family: iranyekan;
+  font-family: iranyekanNormal;
   font-style: normal;
   font-weight: normal;
   src: url("/assets/sass/fonts/eot/iranyekanwebregular.eot");
   src: url("/assets/sass/fonts/eot/iranyekanwebregular.eot?#iefix") format("embedded-opentype"), url("/assets/sass/fonts/woff/iranyekanwebregular.woff") format("woff"), url("/assets/sass/fonts/woff2/iranyekanwebregular.woff2") format("woff2"), url("/assets/sass/fonts/ttf/iranyekanwebregular.ttf") format("truetype"); }
 
 @font-face {
-  font-family: iranyekan;
+  font-family: iranyekan500;
   font-style: normal;
   font-weight: 500;
   src: url("/assets/sass/fonts/eot/iranyekanwebmedium.eot");
   src: url("/assets/sass/fonts/eot/iranyekanwebmedium.eot?#iefix") format("embedded-opentype"), url("/assets/sass/fonts/woff/iranyekanwebmedium.woff") format("woff"), url("/assets/sass/fonts/woff2/iranyekanwebmedium.woff2") format("woff2"), url("/assets/sass/fonts/ttf/iranyekanwebmedium.ttf") format("truetype"); }
 
 @font-face {
-  font-family: iranyekan;
+  font-family: iranyekan800;
   font-style: normal;
   font-weight: 800;
   src: url("/assets/sass/fonts/eot/iranyekanwebextrabold.eot");
   src: url("/assets/sass/fonts/eot/iranyekanwebextrabold.eot?#iefix") format("embedded-opentype"), url("/assets/sass/fonts/woff/iranyekanwebextrabold.woff") format("woff"), url("/assets/sass/fonts/woff2/iranyekanwebextrabold.woff2") format("woff2"), url("/assets/sass/fonts/ttf/iranyekanwebextrabold.ttf") format("truetype"); }
 
 @font-face {
-  font-family: iranyekan;
+  font-family: iranyekan850;
   font-style: normal;
   font-weight: 850;
   src: url("/assets/sass/fonts/eot/iranyekanwebblack.eot");
   src: url("/assets/sass/fonts/eot/iranyekanwebblack.eot?#iefix") format("embedded-opentype"), url("/assets/sass/fonts/woff/iranyekanwebblack.woff") format("woff"), url("/assets/sass/fonts/woff2/iranyekanwebblack.woff2") format("woff2"), url("/assets/sass/fonts/ttf/iranyekanwebblack.ttf") format("truetype"); }
 
 @font-face {
-  font-family: iranyekan;
+  font-family: iranyekan900;
   font-style: normal;
   font-weight: 900;
   src: url("/assets/sass/fonts/eot/iranyekanwebextrablack.eot");

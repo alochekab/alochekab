@@ -18,7 +18,21 @@
     <div class="number-panel">
       <div class="number-panel_content-container">
         <p class="number-welcome-text">به الوچکاب خوش آمدید.</p>
-        <fieldset class="number-panel_input-field"></fieldset>
+        <p class="number-des">
+          لطفا شماره موبایل خود را وارد کنید تا کد فعال سازی برای تان ارسال شود.
+        </p>
+        <form action="">
+          <fieldset class="number-panel_input-field">
+            <label for="phone-number" class="num-label">شماره موبایل</label>
+            <input
+              type="text"
+              name="phone-number"
+              placeholder="   مثلا 09123456789"
+              class="number-panel_phone-input"
+              required="true"
+            />
+          </fieldset>
+        </form>
       </div>
     </div>
   </body>
