@@ -180,3 +180,25 @@
     background-color: $light-gray--color;
   }
 }
+
+//Animations
+.bring-up-ani {
+  animation: bring-up 0.6s;
+  -o-animation: bring-up 0.6s;
+  -moz-animation: bring-up 0.6s;
+  -webkit-animation: bring-up 0.6s;
+}
+
+.bring-up-fullscreen {
+  animation: bring-up-fullscreen 0.6s;
+  -o-animation: bring-up-fullscreen 0.6s;
+  -moz-animation: bring-up-fullscreen 0.6s;
+  -webkit-animation: bring-up-fullscreen 0.6s;
+}
+
+.bring-down-ani {
+  animation: bring-down 0.6s;
+  -o-animation: bring-down 0.6s;
+  -moz-animation: bring-down 0.6s;
+  -webkit-animation: bring-down 0.6s;
+}
