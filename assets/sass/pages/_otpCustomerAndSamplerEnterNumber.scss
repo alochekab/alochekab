@@ -127,8 +127,43 @@
   height: 100%;
 }
 .fullscreen_numpanel-margin {
-  margin-top: 80px;
+  margin-top: -8px;
 }
 
-.hide-x-icon {
+.number-panel_exit-button {
+  margin: 10px 7px 0 0;
+  width: 2.5%;
+  height: 5.1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background-color: $light-gray--color--2;
+    border-radius: 60px;
+  }
+}
+
+.exit-button_img {
+  width: 17px;
+  display: flex;
+  // margin: 22px 22px 0 0;
+  height: auto;
+}
+.display-none {
+  display: none;
+}
+
+.number-panel_change-language {
+  height: 40px;
+  float: left;
+  padding-left: 29px;
+  padding-right: 15px;
+  padding-top: 7px;
+  background: url(/assets/images/green-globe-icon.png) no-repeat scroll 13px;
+  background-size: 11px;
+
+  &:hover {
+    background-color: $light-gray--color--2;
+  }
 }
