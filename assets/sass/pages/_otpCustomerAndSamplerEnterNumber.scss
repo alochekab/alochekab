@@ -48,11 +48,8 @@
 }
 
 .number-panel_content-container {
-  // width: 100%;
   height: 85%;
   margin: 36px 25px 0 25px;
-
-  // background-color: gray;
 }
 
 .number-des {
@@ -104,21 +101,8 @@
     border-bottom-color: black;
     border-bottom-style: solid;
     width: 99.2%;
-    // padding-right: 16px;
   }
 }
-
-// .number-panel_doticon {
-//   width: 9px;
-//   height: auto;
-//   float: left;
-
-//   margin-left: 0.7rem;
-//   // margin-top: -20px;
-//   // position: absolute;
-//   // right: 188rem;
-//   // bottom: 12.6rem;
-// }
 
 .number-panel_submit {
   width: 6%;
@@ -138,6 +122,13 @@
 //Classes For JS :
 //TODO: add some animations
 .fullscreen_numpanel {
+  // padding-top: 200px;
   width: 100%;
   height: 100%;
+}
+.fullscreen_numpanel-margin {
+  margin-top: 80px;
+}
+
+.hide-x-icon {
 }

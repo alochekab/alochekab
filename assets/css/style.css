@@ -273,6 +273,9 @@ button {
   width: 100%;
   height: 100%; }
 
+.fullscreen_numpanel-margin {
+  margin-top: 80px; }
+
 @font-face {
   font-family: iranyekan;
   font-style: normal;
