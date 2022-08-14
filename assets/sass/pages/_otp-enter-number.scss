@@ -1,5 +1,3 @@
-//TODO: need to add some animations to the menu, to pop up.
-
 .enternum-body {
   background-color: $light--green;
   overflow: hidden;
@@ -123,10 +121,8 @@
   }
 }
 
-//Classes For JS :
-//TODO: add some animations
+//Classes For JS <---------
 .fullscreen_numpanel {
-  // padding-top: 200px;
   width: 100%;
   height: 100%;
 }
@@ -156,7 +152,6 @@
 .exit-button_img {
   width: 17px;
   display: flex;
-  // margin: 22px 22px 0 0;
   height: auto;
 }
 .display-none {
@@ -180,6 +175,7 @@
     background-color: $light-gray--color;
   }
 }
+//--------------->
 
 //Animations
 .bring-up-ani {
