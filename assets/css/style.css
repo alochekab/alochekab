@@ -1,111 +1,178 @@
 @charset "UTF-8";
 /* لینک فایلی که وظیفه بارگذاری فونت ها را برعهده دارد */
 @import url(_fontFamily.scss);
-*::after, *::before {
+*::after,
+*::before {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+}
 
-h1, h2, h3, h4, h5, h6, input, textarea {
-  font-family: iranyekan !important; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea {
+  font-family: iranyekan !important;
+}
 
 html {
-  font-size: 62.5%; }
-  @media only screen and (max-width: 600px) {
-    html {
-      font-size: 50%; } }
+  font-size: 62.5%;
+}
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+}
 
 body {
-  font-family: iranyekan  !important; }
+  font-family: iranyekan !important;
+}
 
 ul {
   list-style: none;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 ul li {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 ol {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 p {
-  padding: 0; }
-
-h1, h2, h3, h4, h5, h6 {
   padding: 0;
-  font-weight: normal; }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  font-weight: normal;
+}
 
 fieldset {
   border: none;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 button {
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 @font-face {
   font-family: iranyekan;
   font-style: normal;
   font-weight: bold;
   src: url("/assets/sass/fonts/eot/iranyekanwebbold.eot");
-  src: url("/assets/sass/fonts/eot/iranyekanwebbold.eot?#iefix") format("embedded-opentype"), url("/assets/sass/fonts/woff/iranyekanwebbold.woff") format("woff"), url("/assets/sass/fonts/woff2/iranyekanwebbold.woff2") format("woff2"), url("/assets/sass/fonts/ttf/iranyekanwebbold.ttf") format("truetype"); }
+  src: url("/assets/sass/fonts/eot/iranyekanwebbold.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/sass/fonts/woff/iranyekanwebbold.woff") format("woff"),
+    url("/assets/sass/fonts/woff2/iranyekanwebbold.woff2") format("woff2"),
+    url("/assets/sass/fonts/ttf/iranyekanwebbold.ttf") format("truetype");
+}
 
 @font-face {
   font-family: iranyekan100;
   font-style: normal;
   font-weight: 100;
   src: url("/assets/sass/fonts/eot/iranyekanwebthin.eot");
-  src: url("/assets/sass/fonts/eot/iranyekanwebthin.eot?#iefix") format("embedded-opentype"), url("/assets/sass/fonts/woff/iranyekanwebthin.woff") format("woff"), url("/assets/sass/fonts/woff2/iranyekanwebthin.woff2") format("woff2"), url("/assets/sass/fonts/ttf/iranyekanwebthin.ttf") format("truetype"); }
+  src: url("/assets/sass/fonts/eot/iranyekanwebthin.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/sass/fonts/woff/iranyekanwebthin.woff") format("woff"),
+    url("/assets/sass/fonts/woff2/iranyekanwebthin.woff2") format("woff2"),
+    url("/assets/sass/fonts/ttf/iranyekanwebthin.ttf") format("truetype");
+}
 
 @font-face {
   font-family: iranyekan300;
   font-style: normal;
   font-weight: 300;
   src: url("/assets/sass/fonts/eot/iranyekanweblight.eot");
-  src: url("/assets/sass/fonts/eot/iranyekanweblight.eot?#iefix") format("embedded-opentype"), url("/assets/sass/fonts/woff/iranyekanweblight.woff") format("woff"), url("/assets/sass/fonts/woff2/iranyekanweblight.woff2") format("woff2"), url("/assets/sass/fonts/ttf/iranyekanweblight.ttf") format("truetype"); }
+  src: url("/assets/sass/fonts/eot/iranyekanweblight.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/sass/fonts/woff/iranyekanweblight.woff") format("woff"),
+    url("/assets/sass/fonts/woff2/iranyekanweblight.woff2") format("woff2"),
+    url("/assets/sass/fonts/ttf/iranyekanweblight.ttf") format("truetype");
+}
 
 @font-face {
   font-family: iranyekanNormal;
   font-style: normal;
   font-weight: normal;
   src: url("/assets/sass/fonts/eot/iranyekanwebregular.eot");
-  src: url("/assets/sass/fonts/eot/iranyekanwebregular.eot?#iefix") format("embedded-opentype"), url("/assets/sass/fonts/woff/iranyekanwebregular.woff") format("woff"), url("/assets/sass/fonts/woff2/iranyekanwebregular.woff2") format("woff2"), url("/assets/sass/fonts/ttf/iranyekanwebregular.ttf") format("truetype"); }
+  src: url("/assets/sass/fonts/eot/iranyekanwebregular.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/sass/fonts/woff/iranyekanwebregular.woff") format("woff"),
+    url("/assets/sass/fonts/woff2/iranyekanwebregular.woff2") format("woff2"),
+    url("/assets/sass/fonts/ttf/iranyekanwebregular.ttf") format("truetype");
+}
 
 @font-face {
   font-family: iranyekan500;
   font-style: normal;
   font-weight: 500;
   src: url("/assets/sass/fonts/eot/iranyekanwebmedium.eot");
-  src: url("/assets/sass/fonts/eot/iranyekanwebmedium.eot?#iefix") format("embedded-opentype"), url("/assets/sass/fonts/woff/iranyekanwebmedium.woff") format("woff"), url("/assets/sass/fonts/woff2/iranyekanwebmedium.woff2") format("woff2"), url("/assets/sass/fonts/ttf/iranyekanwebmedium.ttf") format("truetype"); }
+  src: url("/assets/sass/fonts/eot/iranyekanwebmedium.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/sass/fonts/woff/iranyekanwebmedium.woff") format("woff"),
+    url("/assets/sass/fonts/woff2/iranyekanwebmedium.woff2") format("woff2"),
+    url("/assets/sass/fonts/ttf/iranyekanwebmedium.ttf") format("truetype");
+}
 
 @font-face {
   font-family: iranyekan800;
   font-style: normal;
   font-weight: 800;
   src: url("/assets/sass/fonts/eot/iranyekanwebextrabold.eot");
-  src: url("/assets/sass/fonts/eot/iranyekanwebextrabold.eot?#iefix") format("embedded-opentype"), url("/assets/sass/fonts/woff/iranyekanwebextrabold.woff") format("woff"), url("/assets/sass/fonts/woff2/iranyekanwebextrabold.woff2") format("woff2"), url("/assets/sass/fonts/ttf/iranyekanwebextrabold.ttf") format("truetype"); }
+  src: url("/assets/sass/fonts/eot/iranyekanwebextrabold.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/sass/fonts/woff/iranyekanwebextrabold.woff") format("woff"),
+    url("/assets/sass/fonts/woff2/iranyekanwebextrabold.woff2") format("woff2"),
+    url("/assets/sass/fonts/ttf/iranyekanwebextrabold.ttf") format("truetype");
+}
 
 @font-face {
   font-family: iranyekan850;
   font-style: normal;
   font-weight: 850;
   src: url("/assets/sass/fonts/eot/iranyekanwebblack.eot");
-  src: url("/assets/sass/fonts/eot/iranyekanwebblack.eot?#iefix") format("embedded-opentype"), url("/assets/sass/fonts/woff/iranyekanwebblack.woff") format("woff"), url("/assets/sass/fonts/woff2/iranyekanwebblack.woff2") format("woff2"), url("/assets/sass/fonts/ttf/iranyekanwebblack.ttf") format("truetype"); }
+  src: url("/assets/sass/fonts/eot/iranyekanwebblack.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/sass/fonts/woff/iranyekanwebblack.woff") format("woff"),
+    url("/assets/sass/fonts/woff2/iranyekanwebblack.woff2") format("woff2"),
+    url("/assets/sass/fonts/ttf/iranyekanwebblack.ttf") format("truetype");
+}
 
 @font-face {
   font-family: iranyekan900;
   font-style: normal;
   font-weight: 900;
   src: url("/assets/sass/fonts/eot/iranyekanwebextrablack.eot");
-  src: url("/assets/sass/fonts/eot/iranyekanwebextrablack.eot?#iefix") format("embedded-opentype"), url("/assets/sass/fonts/woff/iranyekanwebextrablack.woff") format("woff"), url("/assets/sass/fonts/woff2/iranyekanwebextrablack.woff2") format("woff2"), url("/assets/sass/fonts/ttf/iranyekanwebextrablack.ttf") format("truetype"); }
+  src: url("/assets/sass/fonts/eot/iranyekanwebextrablack.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/sass/fonts/woff/iranyekanwebextrablack.woff") format("woff"),
+    url("/assets/sass/fonts/woff2/iranyekanwebextrablack.woff2") format("woff2"),
+    url("/assets/sass/fonts/ttf/iranyekanwebextrablack.ttf") format("truetype");
+}
 
 .layout-page {
   margin: 0;
   padding: 0;
   background-color: #e2dfdf;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .header {
   width: 100%;
@@ -116,12 +183,14 @@ button {
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  box-shadow: 0px 30px 19px -2px rgba(87, 84, 84, 0.31); }
+  box-shadow: 0px 30px 19px -2px rgba(87, 84, 84, 0.31);
+}
 
 .header_logo {
   margin-right: 10px;
   max-width: 40px;
-  height: auto; }
+  height: auto;
+}
 
 .navbar {
   width: 100%;
@@ -129,7 +198,8 @@ button {
   background-color: white;
   text-align: center;
   font-size: 16px;
-  position: relative; }
+  position: relative;
+}
 
 .navbar_ul {
   height: 100%;
@@ -141,28 +211,34 @@ button {
   justify-content: center;
   font-weight: bold;
   font-size: 16px;
-  color: black; }
+  color: black;
+}
 
 .navbar_ul li {
   padding-top: 5px;
-  width: 100%; }
+  width: 100%;
+}
 
 .navbar_ul li a {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .navbar_ul li a:hover,
 .navbar_ul li a:focus,
 .navbar_ul li a:active,
 .navbar_ul li a:visited {
-  color: inherit; }
+  color: inherit;
+}
 
 .navbar_ul li:hover {
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .temp-select {
   border-bottom-width: 2px;
   border-bottom-color: green;
-  border-bottom-style: solid; }
+  border-bottom-style: solid;
+}
 
 .footer {
   width: 100%;
@@ -170,27 +246,32 @@ button {
   position: fixed;
   bottom: 0;
   background: rgba(255, 255, 255, 0.801);
-  box-shadow: 0px 3px 24px 21px rgba(255, 255, 255, 0.664); }
+  box-shadow: 0px 3px 24px 21px rgba(255, 255, 255, 0.664);
+}
 
 .enternum-body {
   background-color: #00cc6d;
   overflow: hidden;
   padding-right: 0;
-  margin-right: 0; }
+  margin-right: 0;
+}
 
 .center-logo-containor {
   display: grid;
   place-items: center;
-  min-height: 70vh; }
+  min-height: 70vh;
+}
 
 .center-logo {
   background-color: inherit;
   width: 6.3%;
-  height: auto; }
+  height: auto;
+}
 
 .center-logo_img {
   max-width: 150px;
-  height: 150px; }
+  height: 150px;
+}
 
 .number-panel {
   width: 100%;
@@ -198,38 +279,45 @@ button {
   position: fixed;
   bottom: 0;
   background-color: white;
-  border-radius: 10px; }
+  border-radius: 10px;
+}
 
 .disable-selection {
   user-select: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none; }
+  -ms-user-select: none;
+}
 
 .number-welcome-text {
   font-weight: 700;
   font-size: 20px;
-  font-family: iranyekan500; }
+  font-family: iranyekan500;
+}
 
 .number-panel_content-container {
   height: 85%;
-  margin: 36px 25px 0 25px; }
+  margin: 36px 25px 0 25px;
+}
 
 .number-des {
   margin-top: 33px;
   font-size: 16px;
   font-family: iranyekan100;
   font-weight: 600;
-  color: black; }
+  color: black;
+}
 
 .number-panel_input-field {
-  margin-top: 37px; }
+  margin-top: 37px;
+}
 
 .num-label {
   font-size: 16px;
   font-family: iranyekan500;
-  font-weight: 600; }
+  font-weight: 600;
+}
 
 .number-panel_phone-input {
   border: none;
@@ -244,17 +332,21 @@ button {
   font-family: iranyekan100;
   font-weight: -100;
   padding-right: 13px;
-  background: url(/assets/images/green-dot.png) no-repeat scroll 7px 23px;
-  background-size: 9px; }
-  .number-panel_phone-input::placeholder {
-    font-family: iranyekan300; }
-  .number-panel_phone-input:focus::placeholder:active {
-    color: transparent; }
-  .number-panel_phone-input:focus {
-    border-bottom-width: 1px;
-    border-bottom-color: black;
-    border-bottom-style: solid;
-    width: 99.2%; }
+  background: url(../images/green-dot.png) no-repeat scroll 7px 23px;
+  background-size: 9px;
+}
+.number-panel_phone-input::placeholder {
+  font-family: iranyekan300;
+}
+.number-panel_phone-input:focus::placeholder:active {
+  color: transparent;
+}
+.number-panel_phone-input:focus {
+  border-bottom-width: 1px;
+  border-bottom-color: black;
+  border-bottom-style: solid;
+  width: 99.2%;
+}
 
 .number-panel_submit {
   width: 6%;
@@ -265,18 +357,23 @@ button {
   color: white;
   font-family: iranyekan800;
   float: left;
-  margin-top: 20pt; }
-  .number-panel_submit:hover {
-    background-color: #00d672; }
-  .number-panel_submit:active {
-    background-color: #07b864; }
+  margin-top: 20pt;
+}
+.number-panel_submit:hover {
+  background-color: #00d672;
+}
+.number-panel_submit:active {
+  background-color: #07b864;
+}
 
 .fullscreen_numpanel {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+}
 
 .fullscreen_numpanel-margin {
-  margin-top: -8px; }
+  margin-top: -8px;
+}
 
 .number-panel_exit-button {
   margin: 10px 7px 0 0;
@@ -284,21 +381,26 @@ button {
   height: 5.1%;
   display: flex;
   justify-content: center;
-  align-items: center; }
-  .number-panel_exit-button:hover {
-    background-color: #fafafa;
-    border-radius: 60px; }
-  .number-panel_exit-button:active {
-    background-color: #f5f5f5;
-    border-radius: 60px; }
+  align-items: center;
+}
+.number-panel_exit-button:hover {
+  background-color: #fafafa;
+  border-radius: 60px;
+}
+.number-panel_exit-button:active {
+  background-color: #f5f5f5;
+  border-radius: 60px;
+}
 
 .exit-button_img {
   width: 17px;
   display: flex;
-  height: auto; }
+  height: auto;
+}
 
 .display-none {
-  display: none; }
+  display: none;
+}
 
 .number-panel_change-language {
   height: 40px;
@@ -306,107 +408,162 @@ button {
   padding-left: 29px;
   padding-right: 15px;
   padding-top: 7px;
-  background: url(/assets/images/green-globe-icon.png) no-repeat scroll 13px;
-  background-size: 11px; }
-  .number-panel_change-language:hover {
-    background-color: #fafafa; }
-  .number-panel_change-language:active {
-    background-color: #f5f5f5; }
+  background: url(images/green-globe-icon.png) no-repeat scroll 13px;
+  background-size: 11px;
+}
+.number-panel_change-language:hover {
+  background-color: #fafafa;
+}
+.number-panel_change-language:active {
+  background-color: #f5f5f5;
+}
 
 .bring-up-ani {
   animation: bring-up 0.6s;
   -o-animation: bring-up 0.6s;
   -moz-animation: bring-up 0.6s;
-  -webkit-animation: bring-up 0.6s; }
+  -webkit-animation: bring-up 0.6s;
+}
 
 .bring-up-fullscreen {
   animation: bring-up-fullscreen 0.6s;
   -o-animation: bring-up-fullscreen 0.6s;
   -moz-animation: bring-up-fullscreen 0.6s;
-  -webkit-animation: bring-up-fullscreen 0.6s; }
+  -webkit-animation: bring-up-fullscreen 0.6s;
+}
 
 .bring-down-ani {
   animation: bring-down 0.6s;
   -o-animation: bring-down 0.6s;
   -moz-animation: bring-down 0.6s;
-  -webkit-animation: bring-down 0.6s; }
+  -webkit-animation: bring-down 0.6s;
+}
 
 @keyframes bring-up {
   0% {
     width: 100%;
-    height: 0%; }
+    height: 0%;
+  }
   100% {
     width: 100%;
-    height: 35%; } }
+    height: 35%;
+  }
+}
 
 @keyframes bring-up-fullscreen {
   0% {
     width: 100%;
-    height: 35%; }
+    height: 35%;
+  }
   100% {
     width: 100%;
-    height: 100%; } }
+    height: 100%;
+  }
+}
 
 @keyframes bring-down {
   0% {
     width: 100%;
-    height: 100%; }
+    height: 100%;
+  }
   100% {
     width: 100%;
-    height: 35%; } }
+    height: 35%;
+  }
+}
 
 @font-face {
   font-family: iranyekan;
   font-style: normal;
   font-weight: bold;
   src: url("/assets/sass/fonts/eot/iranyekanwebbold.eot");
-  src: url("/assets/sass/fonts/eot/iranyekanwebbold.eot?#iefix") format("embedded-opentype"), url("/assets/sass/fonts/woff/iranyekanwebbold.woff") format("woff"), url("/assets/sass/fonts/woff2/iranyekanwebbold.woff2") format("woff2"), url("/assets/sass/fonts/ttf/iranyekanwebbold.ttf") format("truetype"); }
+  src: url("/assets/sass/fonts/eot/iranyekanwebbold.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/sass/fonts/woff/iranyekanwebbold.woff") format("woff"),
+    url("/assets/sass/fonts/woff2/iranyekanwebbold.woff2") format("woff2"),
+    url("/assets/sass/fonts/ttf/iranyekanwebbold.ttf") format("truetype");
+}
 
 @font-face {
   font-family: iranyekan100;
   font-style: normal;
   font-weight: 100;
   src: url("/assets/sass/fonts/eot/iranyekanwebthin.eot");
-  src: url("/assets/sass/fonts/eot/iranyekanwebthin.eot?#iefix") format("embedded-opentype"), url("/assets/sass/fonts/woff/iranyekanwebthin.woff") format("woff"), url("/assets/sass/fonts/woff2/iranyekanwebthin.woff2") format("woff2"), url("/assets/sass/fonts/ttf/iranyekanwebthin.ttf") format("truetype"); }
+  src: url("/assets/sass/fonts/eot/iranyekanwebthin.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/sass/fonts/woff/iranyekanwebthin.woff") format("woff"),
+    url("/assets/sass/fonts/woff2/iranyekanwebthin.woff2") format("woff2"),
+    url("/assets/sass/fonts/ttf/iranyekanwebthin.ttf") format("truetype");
+}
 
 @font-face {
   font-family: iranyekan300;
   font-style: normal;
   font-weight: 300;
   src: url("/assets/sass/fonts/eot/iranyekanweblight.eot");
-  src: url("/assets/sass/fonts/eot/iranyekanweblight.eot?#iefix") format("embedded-opentype"), url("/assets/sass/fonts/woff/iranyekanweblight.woff") format("woff"), url("/assets/sass/fonts/woff2/iranyekanweblight.woff2") format("woff2"), url("/assets/sass/fonts/ttf/iranyekanweblight.ttf") format("truetype"); }
+  src: url("/assets/sass/fonts/eot/iranyekanweblight.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/sass/fonts/woff/iranyekanweblight.woff") format("woff"),
+    url("/assets/sass/fonts/woff2/iranyekanweblight.woff2") format("woff2"),
+    url("/assets/sass/fonts/ttf/iranyekanweblight.ttf") format("truetype");
+}
 
 @font-face {
   font-family: iranyekanNormal;
   font-style: normal;
   font-weight: normal;
   src: url("/assets/sass/fonts/eot/iranyekanwebregular.eot");
-  src: url("/assets/sass/fonts/eot/iranyekanwebregular.eot?#iefix") format("embedded-opentype"), url("/assets/sass/fonts/woff/iranyekanwebregular.woff") format("woff"), url("/assets/sass/fonts/woff2/iranyekanwebregular.woff2") format("woff2"), url("/assets/sass/fonts/ttf/iranyekanwebregular.ttf") format("truetype"); }
+  src: url("/assets/sass/fonts/eot/iranyekanwebregular.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/sass/fonts/woff/iranyekanwebregular.woff") format("woff"),
+    url("/assets/sass/fonts/woff2/iranyekanwebregular.woff2") format("woff2"),
+    url("/assets/sass/fonts/ttf/iranyekanwebregular.ttf") format("truetype");
+}
 
 @font-face {
   font-family: iranyekan500;
   font-style: normal;
   font-weight: 500;
   src: url("/assets/sass/fonts/eot/iranyekanwebmedium.eot");
-  src: url("/assets/sass/fonts/eot/iranyekanwebmedium.eot?#iefix") format("embedded-opentype"), url("/assets/sass/fonts/woff/iranyekanwebmedium.woff") format("woff"), url("/assets/sass/fonts/woff2/iranyekanwebmedium.woff2") format("woff2"), url("/assets/sass/fonts/ttf/iranyekanwebmedium.ttf") format("truetype"); }
+  src: url("/assets/sass/fonts/eot/iranyekanwebmedium.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/sass/fonts/woff/iranyekanwebmedium.woff") format("woff"),
+    url("/assets/sass/fonts/woff2/iranyekanwebmedium.woff2") format("woff2"),
+    url("/assets/sass/fonts/ttf/iranyekanwebmedium.ttf") format("truetype");
+}
 
 @font-face {
   font-family: iranyekan800;
   font-style: normal;
   font-weight: 800;
   src: url("/assets/sass/fonts/eot/iranyekanwebextrabold.eot");
-  src: url("/assets/sass/fonts/eot/iranyekanwebextrabold.eot?#iefix") format("embedded-opentype"), url("/assets/sass/fonts/woff/iranyekanwebextrabold.woff") format("woff"), url("/assets/sass/fonts/woff2/iranyekanwebextrabold.woff2") format("woff2"), url("/assets/sass/fonts/ttf/iranyekanwebextrabold.ttf") format("truetype"); }
+  src: url("/assets/sass/fonts/eot/iranyekanwebextrabold.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/sass/fonts/woff/iranyekanwebextrabold.woff") format("woff"),
+    url("/assets/sass/fonts/woff2/iranyekanwebextrabold.woff2") format("woff2"),
+    url("/assets/sass/fonts/ttf/iranyekanwebextrabold.ttf") format("truetype");
+}
 
 @font-face {
   font-family: iranyekan850;
   font-style: normal;
   font-weight: 850;
   src: url("/assets/sass/fonts/eot/iranyekanwebblack.eot");
-  src: url("/assets/sass/fonts/eot/iranyekanwebblack.eot?#iefix") format("embedded-opentype"), url("/assets/sass/fonts/woff/iranyekanwebblack.woff") format("woff"), url("/assets/sass/fonts/woff2/iranyekanwebblack.woff2") format("woff2"), url("/assets/sass/fonts/ttf/iranyekanwebblack.ttf") format("truetype"); }
+  src: url("/assets/sass/fonts/eot/iranyekanwebblack.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/sass/fonts/woff/iranyekanwebblack.woff") format("woff"),
+    url("/assets/sass/fonts/woff2/iranyekanwebblack.woff2") format("woff2"),
+    url("/assets/sass/fonts/ttf/iranyekanwebblack.ttf") format("truetype");
+}
 
 @font-face {
   font-family: iranyekan900;
   font-style: normal;
   font-weight: 900;
   src: url("/assets/sass/fonts/eot/iranyekanwebextrablack.eot");
-  src: url("/assets/sass/fonts/eot/iranyekanwebextrablack.eot?#iefix") format("embedded-opentype"), url("/assets/sass/fonts/woff/iranyekanwebextrablack.woff") format("woff"), url("/assets/sass/fonts/woff2/iranyekanwebextrablack.woff2") format("woff2"), url("/assets/sass/fonts/ttf/iranyekanwebextrablack.ttf") format("truetype"); }
+  src: url("/assets/sass/fonts/eot/iranyekanwebextrablack.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/sass/fonts/woff/iranyekanwebextrablack.woff") format("woff"),
+    url("/assets/sass/fonts/woff2/iranyekanwebextrablack.woff2") format("woff2"),
+    url("/assets/sass/fonts/ttf/iranyekanwebextrablack.ttf") format("truetype");
+}
