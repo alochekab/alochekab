@@ -232,6 +232,19 @@ button {
   font-weight: 800;
   margin-right: 20px; }
 
+.enter-code-footer_send-again {
+  float: left;
+  padding-top: 2px;
+  padding-left: 25px;
+  margin-left: 23px;
+  line-height: 55px;
+  text-decoration: none;
+  color: #006a6d;
+  font-size: 14px;
+  font-family: iranyekan300;
+  background: url(../images/left-refresh-icon.png) no-repeat scroll -10px;
+  background-size: 45px; }
+
 .enternum-body {
   background-color: #00cc6d;
   overflow: hidden;
