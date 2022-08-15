@@ -176,3 +176,160 @@ button {
   bottom: 0;
   background: rgba(255, 255, 255, 0.801);
   box-shadow: 0px 3px 24px 21px rgba(255, 255, 255, 0.664); }
+
+.button {
+  max-width: 100%;
+  border: none;
+  color: #fff;
+  padding: 2.1rem 5.3rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.6rem;
+  margin: 0.4rem 0.2rem;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 0.8rem; }
+
+.buttontext {
+  background-color: #006a6d;
+  color: #fff; }
+
+.buttontext:hover {
+  background-color: #b5c2b7;
+  color: #fff; }
+
+.button2 {
+  max-width: 100%;
+  color: #fff;
+  padding: 1.8rem 5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.6rem;
+  margin: 0.4rem 0.2rem;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 0.8rem;
+  border: 0.3rem solid #006a6d; }
+
+.buttontext2 {
+  background-color: #fff;
+  color: #222; }
+
+.buttontext2:hover {
+  background-color: #006a6d;
+  color: #fff; }
+
+input {
+  max-width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.4rem;
+  border: 0.1rem solid #d9d9d9;
+  outline: none;
+  line-height: 2rem; }
+
+.wrapper {
+  box-shadow: 0 0.6rem 2rem -0.5rem rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  top: 40%; }
+
+.label {
+  font-size: 2.8rem;
+  position: absolute;
+  top: 50%;
+  right: 0.1rem;
+  transform: translateY(-50%);
+  line-height: 2rem;
+  padding-right: 0.7rem;
+  color: #80868b;
+  transition: all 0.2s ease-in-out; }
+  @media only screen and (max-width: 778px) {
+    .label {
+      font-size: 1.8rem; } }
+
+.label-old {
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  background: #fff;
+  transform: translateY(-50%);
+  line-height: 2rem;
+  padding-left: 5rem;
+  color: #006a6d; }
+
+.bar {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  background: #006a6d;
+  width: 0%;
+  height: 0.2rem;
+  transition: all 0.5s ease-in-out; }
+
+input:focus ~ .bar {
+  width: 100%;
+  left: 0; }
+
+input:focus + .label {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  background: #fff;
+  transform: translateY(-50%);
+  line-height: 2rem;
+  padding-right: 0.5rem;
+  color: #006a6d; }
+
+.toggle {
+  margin: 3rem;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between; }
+
+.toggle-switch {
+  display: inline-block;
+  background: #b5c2b7;
+  border-radius: 1.5rem;
+  width: 5.8rem;
+  height: 3rem;
+  position: relative;
+  vertical-align: middle;
+  transition: background 0.25s; }
+
+.toggle-switch:before, .toggle-switch:after {
+  content: ""; }
+
+.toggle-switch:before {
+  display: block;
+  background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+  width: 2.1rem;
+  height: 2.1rem;
+  position: absolute;
+  top: 0.4rem;
+  right: 0.4rem;
+  transition: right 0.25s; }
+
+.toggle:hover .toggle-switch:before {
+  background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5); }
+
+.toggle-checkbox:checked + .toggle-switch {
+  background: #006a6d; }
+
+.toggle-checkbox:checked + .toggle-switch:before {
+  right: 3rem; }
+
+.toggle-checkbox {
+  position: absolute;
+  visibility: hidden; }
+
+.toggle-label {
+  margin-right: 0.5rem;
+  position: relative;
+  top: 0.2rem; }
