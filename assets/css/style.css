@@ -634,6 +634,29 @@ input:focus + .label {
   background: url(../images/left-refresh-icon.png) no-repeat scroll -10px;
   background-size: 45px; }
 
+.enter-code-input {
+  width: 100%;
+  height: 20ch;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15ch; }
+
+.enter-code-input_input {
+  direction: ltr;
+  display: block;
+  margin: 2em auto;
+  border: none;
+  padding: 0;
+  width: 19.6ch;
+  background: repeating-linear-gradient(90deg, dimgrey 0, dimgrey 2ch, transparent 0, transparent 3ch) 3px 100%/18ch 2px no-repeat;
+  font: 5ch iranyekan300;
+  letter-spacing: 2ch;
+  padding-left: 11px;
+  padding-bottom: 4px; }
+  .enter-code-input_input:focus {
+    outline: none; }
+
 .enternum-body {
   background-color: #006a6d;
   overflow: hidden;
