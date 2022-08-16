@@ -15,15 +15,29 @@
 @import "components/buttons";
 @import "components/carousel";
 @import "components/slider";
+
 @import "components/alert";
 @import "components/modal";
 @import "components/card";
 
+@import "components/input";
+@import "components/checkbox";
+
 @import "pages/home";
 @import "pages/about";
 @import "pages/contact";
+//Added
+@import "pages/otpCustomerAndSamplerEnterNumber";
+@import "pages/otpCustomerAndSamplerEnterCode";
+@import "pages/otpCustomerAndSamplerLogin";
+@import "components/animations";
+//------------
 
 @import "themes/theme";
 @import "themes/admin";
 
 
+
+//Font family
+@import "base/fontFamily";
+ 
