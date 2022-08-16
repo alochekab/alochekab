@@ -1,0 +1,43 @@
+.card-container{
+    height: 13rem;
+}
+
+.card {
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	display: flex;
+    flex-direction: row-reverse;
+	max-width: 100%;
+	margin: 20px;
+	overflow: hidden;
+	width: 800px;
+}
+
+.card-preview {
+	color: #fff;
+	padding: 30px;
+	max-width: 250px;
+}
+
+
+.card-info {
+    direction: rtl;
+    font-size: 1.9rem;
+	padding: 30px;
+	position: relative;
+	width: 100%;
+
+    &--text{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
+.imgg{
+	width:150px;
+	height:150px;
+	border-radius:10px;
+}
