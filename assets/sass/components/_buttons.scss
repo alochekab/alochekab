@@ -1,0 +1,58 @@
+.button {
+    max-width: 100%;
+    width: 100%;
+    border: none;
+    color: $white--color;
+    padding: 1.5rem 17rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2.3rem;
+    font-family: inherit;
+    margin: 0.4rem 0.2rem;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 0.8rem;
+  }
+  
+  .buttontext {
+    background-color: $app--color; 
+    color: $white--color; 
+    
+  }
+  
+  .buttontext:hover {
+    background-color: $gray--color;
+    color: $white--color;
+  }
+
+
+  .button2 {
+    max-width: 100%;
+    width: 100%;
+    color: $white--color;
+    padding: 1.2rem 16.7rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2.3rem;
+    font-family: inherit;
+    margin: 0.4rem 0.2rem;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 0.8rem;
+    border: 0.3rem solid $app--color;
+  }
+
+
+  .buttontext2 {
+    
+    background-color: $white--color; 
+    color: $black--color--2; 
+    
+  }
+  
+  .buttontext2:hover {
+    background-color: $app--color;
+    color: $white--color;
+  }
