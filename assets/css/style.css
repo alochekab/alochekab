@@ -1,178 +1,111 @@
 @charset "UTF-8";
 /* لینک فایلی که وظیفه بارگذاری فونت ها را برعهده دارد */
 @import url(_fontFamily.scss);
-*::after,
-*::before {
+*::after, *::before {
   padding: 0;
-  margin: 0;
-}
+  margin: 0; }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-input,
-textarea {
-  font-family: iranyekan !important;
-}
+h1, h2, h3, h4, h5, h6, input, textarea {
+  font-family: iranyekan !important; }
 
 html {
-  font-size: 62.5%;
-}
-@media only screen and (max-width: 600px) {
-  html {
-    font-size: 50%;
-  }
-}
+  font-size: 62.5%; }
+  @media only screen and (max-width: 600px) {
+    html {
+      font-size: 50%; } }
 
 body {
-  font-family: iranyekan !important;
-}
+  font-family: iranyekan  !important; }
 
 ul {
   list-style: none;
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 ul li {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 ol {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 p {
-  padding: 0;
-}
+  padding: 0; }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   padding: 0;
-  font-weight: normal;
-}
+  font-weight: normal; }
 
 fieldset {
   border: none;
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 button {
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 @font-face {
   font-family: iranyekan;
   font-style: normal;
   font-weight: bold;
-  src: url("../sass/fonts/eot/iranyekanwebbold.eot");
-  src: url("../sass/fonts/eot/iranyekanwebbold.eot?#iefix")
-      format("embedded-opentype"),
-    url("../sass/fonts/woff/iranyekanwebbold.woff") format("woff"),
-    url("../sass/fonts/woff2/iranyekanwebbold.woff2") format("woff2"),
-    url("../sass/fonts/ttf/iranyekanwebbold.ttf") format("truetype");
-}
+  src: url("../fonts/eot/iranyekanwebbold.eot");
+  src: url("../fonts/eot/iranyekanwebbold.eot?#iefix") format("embedded-opentype"), url("../fonts/woff/iranyekanwebbold.woff") format("woff"), url("../fonts/woff2/iranyekanwebbold.woff2") format("woff2"), url("../fonts/ttf/iranyekanwebbold.ttf") format("truetype"); }
 
 @font-face {
   font-family: iranyekan100;
   font-style: normal;
   font-weight: 100;
-  src: url("../sass/fonts/eot/iranyekanwebthin.eot");
-  src: url("../sass/fonts/eot/iranyekanwebthin.eot?#iefix")
-      format("embedded-opentype"),
-    url("../sass/fonts/woff/iranyekanwebthin.woff") format("woff"),
-    url("../sass/fonts/woff2/iranyekanwebthin.woff2") format("woff2"),
-    url("../sass/fonts/ttf/iranyekanwebthin.ttf") format("truetype");
-}
+  src: url("../fonts/eot/iranyekanwebthin.eot");
+  src: url("../fonts/eot/iranyekanwebthin.eot?#iefix") format("embedded-opentype"), url("../fonts/woff/iranyekanwebthin.woff") format("woff"), url("../fonts/woff2/iranyekanwebthin.woff2") format("woff2"), url("../fonts/ttf/iranyekanwebthin.ttf") format("truetype"); }
 
 @font-face {
   font-family: iranyekan300;
   font-style: normal;
   font-weight: 300;
-  src: url("../sass/fonts/eot/iranyekanweblight.eot");
-  src: url("../sass/fonts/eot/iranyekanweblight.eot?#iefix")
-      format("embedded-opentype"),
-    url("../sass/fonts/woff/iranyekanweblight.woff") format("woff"),
-    url("../sass/fonts/woff2/iranyekanweblight.woff2") format("woff2"),
-    url("../sass/fonts/ttf/iranyekanweblight.ttf") format("truetype");
-}
+  src: url("../fonts/eot/iranyekanweblight.eot");
+  src: url("../fonts/eot/iranyekanweblight.eot?#iefix") format("embedded-opentype"), url("../fonts/woff/iranyekanweblight.woff") format("woff"), url("../fonts/woff2/iranyekanweblight.woff2") format("woff2"), url("../fonts/ttf/iranyekanweblight.ttf") format("truetype"); }
 
 @font-face {
   font-family: iranyekanNormal;
   font-style: normal;
   font-weight: normal;
-  src: url("../sass/fonts/eot/iranyekanwebregular.eot");
-  src: url("../sass/fonts/eot/iranyekanwebregular.eot?#iefix")
-      format("embedded-opentype"),
-    url("../sass/fonts/woff/iranyekanwebregular.woff") format("woff"),
-    url("../sass/fonts/woff2/iranyekanwebregular.woff2") format("woff2"),
-    url("../sass/fonts/ttf/iranyekanwebregular.ttf") format("truetype");
-}
+  src: url("../fonts/eot/iranyekanwebregular.eot");
+  src: url("../fonts/eot/iranyekanwebregular.eot?#iefix") format("embedded-opentype"), url("../fonts/woff/iranyekanwebregular.woff") format("woff"), url("../fonts/woff2/iranyekanwebregular.woff2") format("woff2"), url("../fonts/ttf/iranyekanwebregular.ttf") format("truetype"); }
 
 @font-face {
   font-family: iranyekan500;
   font-style: normal;
   font-weight: 500;
-  src: url("../sass/fonts/eot/iranyekanwebmedium.eot");
-  src: url("../sass/fonts/eot/iranyekanwebmedium.eot?#iefix")
-      format("embedded-opentype"),
-    url("../sass/fonts/woff/iranyekanwebmedium.woff") format("woff"),
-    url("../sass/fonts/woff2/iranyekanwebmedium.woff2") format("woff2"),
-    url("../sass/fonts/ttf/iranyekanwebmedium.ttf") format("truetype");
-}
+  src: url("../fonts/eot/iranyekanwebmedium.eot");
+  src: url("../fonts/eot/iranyekanwebmedium.eot?#iefix") format("embedded-opentype"), url("../fonts/woff/iranyekanwebmedium.woff") format("woff"), url("../fonts/woff2/iranyekanwebmedium.woff2") format("woff2"), url("../fonts/ttf/iranyekanwebmedium.ttf") format("truetype"); }
 
 @font-face {
   font-family: iranyekan800;
   font-style: normal;
   font-weight: 800;
-  src: url("../sass/fonts/eot/iranyekanwebextrabold.eot");
-  src: url("../sass/fonts/eot/iranyekanwebextrabold.eot?#iefix")
-      format("embedded-opentype"),
-    url("../sass/fonts/woff/iranyekanwebextrabold.woff") format("woff"),
-    url("../sass/fonts/woff2/iranyekanwebextrabold.woff2") format("woff2"),
-    url("../sass/fonts/ttf/iranyekanwebextrabold.ttf") format("truetype");
-}
+  src: url("../fonts/eot/iranyekanwebextrabold.eot");
+  src: url("../fonts/eot/iranyekanwebextrabold.eot?#iefix") format("embedded-opentype"), url("../fonts/woff/iranyekanwebextrabold.woff") format("woff"), url("../fonts/woff2/iranyekanwebextrabold.woff2") format("woff2"), url("../fonts/ttf/iranyekanwebextrabold.ttf") format("truetype"); }
 
 @font-face {
   font-family: iranyekan850;
   font-style: normal;
   font-weight: 850;
-  src: url("../sass/fonts/eot/iranyekanwebblack.eot");
-  src: url("../sass/fonts/eot/iranyekanwebblack.eot?#iefix")
-      format("embedded-opentype"),
-    url("../sass/fonts/woff/iranyekanwebblack.woff") format("woff"),
-    url("../sass/fonts/woff2/iranyekanwebblack.woff2") format("woff2"),
-    url("../sass/fonts/ttf/iranyekanwebblack.ttf") format("truetype");
-}
+  src: url("../fonts/eot/iranyekanwebblack.eot");
+  src: url("../fonts/eot/iranyekanwebblack.eot?#iefix") format("embedded-opentype"), url("../fonts/woff/iranyekanwebblack.woff") format("woff"), url("../fonts/woff2/iranyekanwebblack.woff2") format("woff2"), url("../fonts/ttf/iranyekanwebblack.ttf") format("truetype"); }
 
 @font-face {
   font-family: iranyekan900;
   font-style: normal;
   font-weight: 900;
-  src: url("../sass/fonts/eot/iranyekanwebextrablack.eot");
-  src: url("../sass/fonts/eot/iranyekanwebextrablack.eot?#iefix")
-      format("embedded-opentype"),
-    url("../sass/fonts/woff/iranyekanwebextrablack.woff") format("woff"),
-    url("../sass/fonts/woff2/iranyekanwebextrablack.woff2") format("woff2"),
-    url("../sass/fonts/ttf/iranyekanwebextrablack.ttf") format("truetype");
-}
+  src: url("../fonts/eot/iranyekanwebextrablack.eot");
+  src: url("../fonts/eot/iranyekanwebextrablack.eot?#iefix") format("embedded-opentype"), url("../fonts/woff/iranyekanwebextrablack.woff") format("woff"), url("../fonts/woff2/iranyekanwebextrablack.woff2") format("woff2"), url("../fonts/ttf/iranyekanwebextrablack.ttf") format("truetype"); }
 
 .layout-page {
   margin: 0;
   padding: 0;
   background-color: #e2dfdf;
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 .header {
   width: 100%;
@@ -183,14 +116,12 @@ button {
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  box-shadow: 0px 30px 19px -2px rgba(87, 84, 84, 0.31);
-}
+  box-shadow: 0px 30px 19px -2px rgba(87, 84, 84, 0.31); }
 
 .header_logo {
   margin-right: 10px;
   max-width: 40px;
-  height: auto;
-}
+  height: auto; }
 
 .navbar {
   width: 100%;
@@ -198,8 +129,7 @@ button {
   background-color: white;
   text-align: center;
   font-size: 16px;
-  position: relative;
-}
+  position: relative; }
 
 .navbar_ul {
   height: 100%;
@@ -211,34 +141,28 @@ button {
   justify-content: center;
   font-weight: bold;
   font-size: 16px;
-  color: black;
-}
+  color: black; }
 
 .navbar_ul li {
   padding-top: 5px;
-  width: 100%;
-}
+  width: 100%; }
 
 .navbar_ul li a {
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 .navbar_ul li a:hover,
 .navbar_ul li a:focus,
 .navbar_ul li a:active,
 .navbar_ul li a:visited {
-  color: inherit;
-}
+  color: inherit; }
 
 .navbar_ul li:hover {
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 .temp-select {
   border-bottom-width: 2px;
   border-bottom-color: green;
-  border-bottom-style: solid;
-}
+  border-bottom-style: solid; }
 
 .footer {
   width: 100%;
@@ -246,32 +170,489 @@ button {
   position: fixed;
   bottom: 0;
   background: rgba(255, 255, 255, 0.801);
-  box-shadow: 0px 3px 24px 21px rgba(255, 255, 255, 0.664);
-}
+  box-shadow: 0px 3px 24px 21px rgba(255, 255, 255, 0.664); }
+
+.button {
+  max-width: 100%;
+  width: 100%;
+  border: none;
+  color: #fff;
+  padding: 1.5rem 17rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2.3rem;
+  font-family: inherit;
+  margin: 0.4rem 0.2rem;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 0.8rem; }
+
+.buttontext {
+  background-color: #006a6d;
+  color: #fff; }
+
+.buttontext:hover {
+  background-color: #b5c2b7;
+  color: #fff; }
+
+.button2 {
+  max-width: 100%;
+  width: 100%;
+  color: #fff;
+  padding: 1.2rem 16.7rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2.3rem;
+  font-family: inherit;
+  margin: 0.4rem 0.2rem;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 0.8rem;
+  border: 0.3rem solid #006a6d; }
+
+.buttontext2 {
+  background-color: #fff;
+  color: #222; }
+
+.buttontext2:hover {
+  background-color: #006a6d;
+  color: #fff; }
+
+.toast {
+  position: absolute;
+  top: 2.5rem;
+  right: 3rem;
+  border-radius: 1.2rem;
+  background: #fff;
+  padding: 2rem 2.5rem 2rem 10.9rem;
+  box-shadow: 0 0.6rem 2rem -0.5rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transform: translateX(calc(100% + 3rem));
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35); }
+
+.toast.active {
+  transform: translateX(0%); }
+
+.toast .toast-content {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse; }
+
+.toast-content .check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+  min-width: 3.5rem;
+  background-color: #006a6d;
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 50%; }
+
+.toast-content .message {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
+  padding: 1rem;
+  width: 100%;
+  height: 100%; }
+
+.message .text {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #666666;
+  direction: rtl; }
+
+.message .text.text-1 {
+  font-weight: 600;
+  color: #333; }
+
+.toast .close {
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  opacity: 0.7; }
+
+.toast .close:hover {
+  opacity: 1; }
+
+.toast .progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0.3rem;
+  width: 100%; }
+
+.toast .progress:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #006a6d; }
+
+.progress.active:before {
+  animation: progress 5s linear forwards; }
+
+@keyframes progress {
+  100% {
+    right: 100%; } }
+
+button {
+  padding: 1.2rem 2rem;
+  font-size: 2rem;
+  outline: none;
+  border: none;
+  background-color: #006a6d;
+  color: #fff;
+  border-radius: 0.9rem;
+  cursor: pointer;
+  transition: 0.3s; }
+
+button:hover {
+  background-color: #b5c2b7; }
+
+.toast.active ~ button {
+  pointer-events: none; }
+
+body {
+  font-family: Roboto, sans-serif; }
+
+header {
+  padding: 24px; }
+
+.wrap {
+  max-width: 640px;
+  margin: 0 auto; }
+
+ul.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.overlay {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  opacity: 0;
+  transition: all 950ms cubic-bezier(0.32, 1, 0.23, 1) 0ms; }
+  .overlay .social {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #b5c2b7;
+    padding: 8px 24px 16px;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.22), 0px 14px 56px rgba(0, 0, 0, 0.25);
+    transform: translate(0, 100%);
+    transition: all 450ms cubic-bezier(0.32, 1, 0.23, 1) 100ms;
+    height: 40rem;
+    border-radius: 2.5rem 2.5rem 0 0; }
+  .overlay .btn-close {
+    color: #ba5a31;
+    transform: scale(0, 0);
+    transition: all 450ms ease-in-out 0;
+    font-size: 3rem; }
+  .overlay:target {
+    display: block;
+    position: fixed;
+    top: 0;
+    opacity: 1; }
+    .overlay:target .social {
+      transform: translate(0, 0);
+      z-index: 9; }
+    .overlay:target .btn-close {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      outline: 0 none;
+      transform: scale(1, 1); }
+
+@media screen and (min-width: 640px) {
+  .overlay {
+    padding: 0 24px; }
+    .overlay .social {
+      width: calc(100% - 48px); }
+      .overlay .social ul {
+        column-gap: 64px; } }
+
+.mdi::before {
+  font-size: 24px;
+  line-height: 48px; }
+
+.social .mdi::before {
+  font-size: 48px; }
+
+.sr-only {
+  /* a generic way to visually hide content while remaining accessible to screen readers (h5bp.com) */
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  position: absolute;
+  height: 1px;
+  width: 1px; }
+
+.modal--iner {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.card-container {
+  height: 13rem; }
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: row-reverse;
+  max-width: 100%;
+  margin: 20px;
+  overflow: hidden;
+  width: 800px; }
+
+.card-preview {
+  color: #fff;
+  padding: 30px;
+  max-width: 250px; }
+
+.card-info {
+  direction: rtl;
+  font-size: 1.9rem;
+  padding: 30px;
+  position: relative;
+  width: 100%; }
+  .card-info--text {
+    display: flex;
+    flex-direction: column; }
+
+.imgg {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px; }
+
+input {
+  width: 100%;
+  padding: 1.5rem 4rem;
+  border-radius: 0.4rem;
+  border: 0.1rem solid #d9d9d9;
+  outline: none;
+  line-height: 2rem; }
+  @media only screen and (max-width: 778px) {
+    input {
+      padding: 1.5rem; } }
+
+.wrapper {
+  box-shadow: 0 0.6rem 2rem -0.5rem rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  position: relative;
+  width: 100%; }
+
+.label {
+  font-size: 1.6rem;
+  position: absolute;
+  top: 50%;
+  right: 0.1rem;
+  transform: translateY(-50%);
+  line-height: 2rem;
+  padding-right: 0.7rem;
+  color: #80868b;
+  transition: all 0.2s ease-in-out; }
+  @media only screen and (max-width: 778px) {
+    .label {
+      font-size: 1.5rem; } }
+
+.label-old {
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  background: #fff;
+  transform: translateY(-50%);
+  line-height: 2rem;
+  padding-left: 5rem;
+  color: #006a6d; }
+
+.bar {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  background: #006a6d;
+  width: 0%;
+  height: 0.2rem;
+  transition: all 0.5s ease-in-out; }
+
+input:focus ~ .bar {
+  width: 106.5%;
+  left: 0; }
+
+input:focus + .label {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  background: #fff;
+  transform: translateY(-50%);
+  line-height: 2rem;
+  padding-right: 0.5rem;
+  color: #006a6d; }
+
+.toggle {
+  margin: 3rem;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between; }
+
+.toggle-switch {
+  display: inline-block;
+  background: #b5c2b7;
+  border-radius: 1.5rem;
+  width: 5.8rem;
+  height: 3rem;
+  position: relative;
+  vertical-align: middle;
+  transition: background 0.25s; }
+
+.toggle-switch:before, .toggle-switch:after {
+  content: ""; }
+
+.toggle-switch:before {
+  display: block;
+  background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+  width: 2.1rem;
+  height: 2.1rem;
+  position: absolute;
+  top: 0.4rem;
+  right: 0.4rem;
+  transition: right 0.25s; }
+
+.toggle:hover .toggle-switch:before {
+  background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5); }
+
+.toggle-checkbox:checked + .toggle-switch {
+  background: #006a6d; }
+
+.toggle-checkbox:checked + .toggle-switch:before {
+  right: 3rem; }
+
+.toggle-checkbox {
+  position: absolute;
+  visibility: hidden; }
+
+.toggle-label {
+  font-size: 1.8rem;
+  margin-right: 0.5rem;
+  position: relative;
+  top: 0.2rem; }
+  @media only screen and (max-width: 778px) {
+    .toggle-label {
+      font-size: 1.5rem; } }
+
+.enter-code-body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow: hidden; }
+
+.content-container {
+  margin: 7px 5px 0 0; }
+
+.back-arrow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  height: 45px;
+  width: 45px; }
+  .back-arrow-container:hover {
+    background-color: #fafafa; }
+  .back-arrow-container:active {
+    background-color: #f5f5f5; }
+
+.back-arrow-icon {
+  width: 27px;
+  height: auto; }
+
+.enter-code-message {
+  margin: 40px 18px 0 0;
+  font-size: 24px;
+  font-family: iranyekan500;
+  font-weight: bolder; }
+
+.enter-code-message2 {
+  font-size: 16px;
+  font-family: iranyekan300;
+  margin: 33px 20px 0 0; }
+
+.enter-code-message2_change-number {
+  font-size: 14px;
+  color: #006a6d;
+  font-family: iranyekan300;
+  font-weight: 600;
+  text-decoration: none; }
+
+.enter-code-footer {
+  width: 100%;
+  height: 7.5%;
+  position: fixed;
+  bottom: 0;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 40px; }
+  .enter-code-footer hr {
+    border-color: rgba(211, 208, 208, 0.295); }
+
+.enter-code-footer_resend-message {
+  font-size: 14px;
+  font-family: iranyekan500;
+  font-weight: 800;
+  margin-right: 20px; }
+
+.enter-code-footer_send-again {
+  float: left;
+  padding-top: 2px;
+  padding-left: 25px;
+  margin-left: 23px;
+  line-height: 55px;
+  text-decoration: none;
+  color: #006a6d;
+  font-size: 14px;
+  font-family: iranyekan300;
+  background: url(../images/left-refresh-icon.png) no-repeat scroll -10px;
+  background-size: 45px; }
 
 .enternum-body {
   background-color: #006a6d;
   overflow: hidden;
   padding-right: 0;
-  margin-right: 0;
-}
+  margin-right: 0; }
 
 .center-logo-containor {
   display: grid;
   place-items: center;
-  min-height: 70vh;
-}
+  min-height: 70vh; }
 
 .center-logo {
   background-color: inherit;
   width: 6.3%;
-  height: auto;
-}
+  height: auto; }
 
 .center-logo_img {
   max-width: 150px;
-  height: 150px;
-}
+  height: 150px; }
 
 .number-panel {
   width: 100%;
@@ -279,45 +660,38 @@ button {
   position: fixed;
   bottom: 0;
   background-color: white;
-  border-radius: 10px;
-}
+  border-radius: 10px; }
 
 .disable-selection {
   user-select: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
-}
+  -ms-user-select: none; }
 
 .number-welcome-text {
   font-weight: 700;
   font-size: 20px;
-  font-family: iranyekan500;
-}
+  font-family: iranyekan500; }
 
 .number-panel_content-container {
   height: 85%;
-  margin: 36px 25px 0 25px;
-}
+  margin: 36px 25px 0 25px; }
 
 .number-des {
   margin-top: 33px;
   font-size: 16px;
   font-family: iranyekan100;
   font-weight: 600;
-  color: black;
-}
+  color: black; }
 
 .number-panel_input-field {
-  margin-top: 37px;
-}
+  margin-top: 37px; }
 
 .num-label {
   font-size: 16px;
   font-family: iranyekan500;
-  font-weight: 600;
-}
+  font-weight: 600; }
 
 .number-panel_phone-input {
   border: none;
@@ -333,20 +707,16 @@ button {
   font-weight: -100;
   padding-right: 13px;
   background: url(../images/green-dot.png) no-repeat scroll 7px 23px;
-  background-size: 9px;
-}
-.number-panel_phone-input::placeholder {
-  font-family: iranyekan300;
-}
-.number-panel_phone-input:focus::placeholder:active {
-  color: transparent;
-}
-.number-panel_phone-input:focus {
-  border-bottom-width: 1px;
-  border-bottom-color: black;
-  border-bottom-style: solid;
-  width: 99.2%;
-}
+  background-size: 9px; }
+  .number-panel_phone-input::placeholder {
+    font-family: iranyekan300; }
+  .number-panel_phone-input:focus::placeholder:active {
+    color: transparent; }
+  .number-panel_phone-input:focus {
+    border-bottom-width: 1px;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    width: 99.2%; }
 
 .number-panel_submit {
   width: 6%;
@@ -357,23 +727,21 @@ button {
   color: white;
   font-family: iranyekan800;
   float: left;
-  margin-top: 20pt;
-}
-.number-panel_submit:hover {
-  background-color: #00d672;
-}
-.number-panel_submit:active {
-  background-color: #07b864;
-}
+  margin-top: 20pt; }
+  @media only screen and (max-width: 778px) {
+    .number-panel_submit {
+      width: 25%; } }
+  .number-panel_submit:hover {
+    background-color: rgba(0, 106, 109, 0.7); }
+  .number-panel_submit:active {
+    background-color: #006a6d; }
 
 .fullscreen_numpanel {
   width: 100%;
-  height: 100%;
-}
+  height: 100%; }
 
 .fullscreen_numpanel-margin {
-  margin-top: -8px;
-}
+  margin-top: -8px; }
 
 .number-panel_exit-button {
   margin: 10px 7px 0 0;
@@ -381,26 +749,21 @@ button {
   height: 5.1%;
   display: flex;
   justify-content: center;
-  align-items: center;
-}
-.number-panel_exit-button:hover {
-  background-color: #fafafa;
-  border-radius: 60px;
-}
-.number-panel_exit-button:active {
-  background-color: #f5f5f5;
-  border-radius: 60px;
-}
+  align-items: center; }
+  .number-panel_exit-button:hover {
+    background-color: #fafafa;
+    border-radius: 60px; }
+  .number-panel_exit-button:active {
+    background-color: #f5f5f5;
+    border-radius: 60px; }
 
 .exit-button_img {
   width: 17px;
   display: flex;
-  height: auto;
-}
+  height: auto; }
 
 .display-none {
-  display: none;
-}
+  display: none; }
 
 .number-panel_change-language {
   height: 40px;
@@ -409,161 +772,106 @@ button {
   padding-right: 15px;
   padding-top: 7px;
   background: url(../images/green-globe-icon.png) no-repeat scroll 13px;
-  background-size: 11px;
-}
-.number-panel_change-language:hover {
-  background-color: #fafafa;
-}
-.number-panel_change-language:active {
-  background-color: #f5f5f5;
-}
+  background-size: 11px; }
+  .number-panel_change-language:hover {
+    background-color: #fafafa; }
+  .number-panel_change-language:active {
+    background-color: #f5f5f5; }
 
 .bring-up-ani {
   animation: bring-up 0.6s;
   -o-animation: bring-up 0.6s;
   -moz-animation: bring-up 0.6s;
-  -webkit-animation: bring-up 0.6s;
-}
+  -webkit-animation: bring-up 0.6s; }
 
 .bring-up-fullscreen {
   animation: bring-up-fullscreen 0.6s;
   -o-animation: bring-up-fullscreen 0.6s;
   -moz-animation: bring-up-fullscreen 0.6s;
-  -webkit-animation: bring-up-fullscreen 0.6s;
-}
+  -webkit-animation: bring-up-fullscreen 0.6s; }
 
 .bring-down-ani {
   animation: bring-down 0.6s;
   -o-animation: bring-down 0.6s;
   -moz-animation: bring-down 0.6s;
-  -webkit-animation: bring-down 0.6s;
-}
+  -webkit-animation: bring-down 0.6s; }
 
 @keyframes bring-up {
   0% {
     width: 100%;
-    height: 0%;
-  }
+    height: 0%; }
   100% {
     width: 100%;
-    height: 35%;
-  }
-}
+    height: 35%; } }
 
 @keyframes bring-up-fullscreen {
   0% {
     width: 100%;
-    height: 35%;
-  }
+    height: 35%; }
   100% {
     width: 100%;
-    height: 100%;
-  }
-}
+    height: 100%; } }
 
 @keyframes bring-down {
   0% {
     width: 100%;
-    height: 100%;
-  }
+    height: 100%; }
   100% {
     width: 100%;
-    height: 35%;
-  }
-}
+    height: 35%; } }
 
 @font-face {
   font-family: iranyekan;
   font-style: normal;
   font-weight: bold;
-  src: url("../sass/fonts/eot/iranyekanwebbold.eot");
-  src: url("../sass/fonts/eot/iranyekanwebbold.eot?#iefix")
-      format("embedded-opentype"),
-    url("../sass/fonts/woff/iranyekanwebbold.woff") format("woff"),
-    url("../sass/fonts/woff2/iranyekanwebbold.woff2") format("woff2"),
-    url("../sass/fonts/ttf/iranyekanwebbold.ttf") format("truetype");
-}
+  src: url("../fonts/eot/iranyekanwebbold.eot");
+  src: url("../fonts/eot/iranyekanwebbold.eot?#iefix") format("embedded-opentype"), url("../fonts/woff/iranyekanwebbold.woff") format("woff"), url("../fonts/woff2/iranyekanwebbold.woff2") format("woff2"), url("../fonts/ttf/iranyekanwebbold.ttf") format("truetype"); }
 
 @font-face {
   font-family: iranyekan100;
   font-style: normal;
   font-weight: 100;
-  src: url("../sass/fonts/eot/iranyekanwebthin.eot");
-  src: url("../sass/fonts/eot/iranyekanwebthin.eot?#iefix")
-      format("embedded-opentype"),
-    url("../sass/fonts/woff/iranyekanwebthin.woff") format("woff"),
-    url("../sass/fonts/woff2/iranyekanwebthin.woff2") format("woff2"),
-    url("../sass/fonts/ttf/iranyekanwebthin.ttf") format("truetype");
-}
+  src: url("../fonts/eot/iranyekanwebthin.eot");
+  src: url("../fonts/eot/iranyekanwebthin.eot?#iefix") format("embedded-opentype"), url("../fonts/woff/iranyekanwebthin.woff") format("woff"), url("../fonts/woff2/iranyekanwebthin.woff2") format("woff2"), url("../fonts/ttf/iranyekanwebthin.ttf") format("truetype"); }
 
 @font-face {
   font-family: iranyekan300;
   font-style: normal;
   font-weight: 300;
-  src: url("../sass/fonts/eot/iranyekanweblight.eot");
-  src: url("../sass/fonts/eot/iranyekanweblight.eot?#iefix")
-      format("embedded-opentype"),
-    url("../sass/fonts/woff/iranyekanweblight.woff") format("woff"),
-    url("../sass/fonts/woff2/iranyekanweblight.woff2") format("woff2"),
-    url("../sass/fonts/ttf/iranyekanweblight.ttf") format("truetype");
-}
+  src: url("../fonts/eot/iranyekanweblight.eot");
+  src: url("../fonts/eot/iranyekanweblight.eot?#iefix") format("embedded-opentype"), url("../fonts/woff/iranyekanweblight.woff") format("woff"), url("../fonts/woff2/iranyekanweblight.woff2") format("woff2"), url("../fonts/ttf/iranyekanweblight.ttf") format("truetype"); }
 
 @font-face {
   font-family: iranyekanNormal;
   font-style: normal;
   font-weight: normal;
-  src: url("../sass/fonts/eot/iranyekanwebregular.eot");
-  src: url("../sass/fonts/eot/iranyekanwebregular.eot?#iefix")
-      format("embedded-opentype"),
-    url("../sass/fonts/woff/iranyekanwebregular.woff") format("woff"),
-    url("../sass/fonts/woff2/iranyekanwebregular.woff2") format("woff2"),
-    url("../sass/fonts/ttf/iranyekanwebregular.ttf") format("truetype");
-}
+  src: url("../fonts/eot/iranyekanwebregular.eot");
+  src: url("../fonts/eot/iranyekanwebregular.eot?#iefix") format("embedded-opentype"), url("../fonts/woff/iranyekanwebregular.woff") format("woff"), url("../fonts/woff2/iranyekanwebregular.woff2") format("woff2"), url("../fonts/ttf/iranyekanwebregular.ttf") format("truetype"); }
 
 @font-face {
   font-family: iranyekan500;
   font-style: normal;
   font-weight: 500;
-  src: url("../sass/fonts/eot/iranyekanwebmedium.eot");
-  src: url("../sass/fonts/eot/iranyekanwebmedium.eot?#iefix")
-      format("embedded-opentype"),
-    url("../sass/fonts/woff/iranyekanwebmedium.woff") format("woff"),
-    url("../sass/fonts/woff2/iranyekanwebmedium.woff2") format("woff2"),
-    url("../sass/fonts/ttf/iranyekanwebmedium.ttf") format("truetype");
-}
+  src: url("../fonts/eot/iranyekanwebmedium.eot");
+  src: url("../fonts/eot/iranyekanwebmedium.eot?#iefix") format("embedded-opentype"), url("../fonts/woff/iranyekanwebmedium.woff") format("woff"), url("../fonts/woff2/iranyekanwebmedium.woff2") format("woff2"), url("../fonts/ttf/iranyekanwebmedium.ttf") format("truetype"); }
 
 @font-face {
   font-family: iranyekan800;
   font-style: normal;
   font-weight: 800;
-  src: url("../sass/fonts/eot/iranyekanwebextrabold.eot");
-  src: url("../sass/fonts/eot/iranyekanwebextrabold.eot?#iefix")
-      format("embedded-opentype"),
-    url("../sass/fonts/woff/iranyekanwebextrabold.woff") format("woff"),
-    url("../sass/fonts/woff2/iranyekanwebextrabold.woff2") format("woff2"),
-    url("../sass/fonts/ttf/iranyekanwebextrabold.ttf") format("truetype");
-}
+  src: url("../fonts/eot/iranyekanwebextrabold.eot");
+  src: url("../fonts/eot/iranyekanwebextrabold.eot?#iefix") format("embedded-opentype"), url("../fonts/woff/iranyekanwebextrabold.woff") format("woff"), url("../fonts/woff2/iranyekanwebextrabold.woff2") format("woff2"), url("../fonts/ttf/iranyekanwebextrabold.ttf") format("truetype"); }
 
 @font-face {
   font-family: iranyekan850;
   font-style: normal;
   font-weight: 850;
-  src: url("../sass/fonts/eot/iranyekanwebblack.eot");
-  src: url("../sass/fonts/eot/iranyekanwebblack.eot?#iefix")
-      format("embedded-opentype"),
-    url("../sass/fonts/woff/iranyekanwebblack.woff") format("woff"),
-    url("../sass/fonts/woff2/iranyekanwebblack.woff2") format("woff2"),
-    url("../sass/fonts/ttf/iranyekanwebblack.ttf") format("truetype");
-}
+  src: url("../fonts/eot/iranyekanwebblack.eot");
+  src: url("../fonts/eot/iranyekanwebblack.eot?#iefix") format("embedded-opentype"), url("../fonts/woff/iranyekanwebblack.woff") format("woff"), url("../fonts/woff2/iranyekanwebblack.woff2") format("woff2"), url("../fonts/ttf/iranyekanwebblack.ttf") format("truetype"); }
 
 @font-face {
   font-family: iranyekan900;
   font-style: normal;
   font-weight: 900;
-  src: url("../sass/fonts/eot/iranyekanwebextrablack.eot");
-  src: url("../sass/fonts/eot/iranyekanwebextrablack.eot?#iefix")
-      format("embedded-opentype"),
-    url("../sass/fonts/woff/iranyekanwebextrablack.woff") format("woff"),
-    url("../sass/fonts/woff2/iranyekanwebextrablack.woff2") format("woff2"),
-    url("../sass/fonts/ttf/iranyekanwebextrablack.ttf") format("truetype");
-}
+  src: url("../fonts/eot/iranyekanwebextrablack.eot");
+  src: url("../fonts/eot/iranyekanwebextrablack.eot?#iefix") format("embedded-opentype"), url("../fonts/woff/iranyekanwebextrablack.woff") format("woff"), url("../fonts/woff2/iranyekanwebextrablack.woff2") format("woff2"), url("../fonts/ttf/iranyekanwebextrablack.ttf") format("truetype"); }
