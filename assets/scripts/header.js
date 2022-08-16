@@ -1,4 +1,4 @@
-"use script";
+"use strict";
 
 const navLi1 = document.getElementById("navbar_ul_li1");
 const navLi2 = document.getElementById("navbar_ul_li2");

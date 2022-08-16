@@ -1,0 +1,204 @@
+//TODO: need to add some animations to the menu, to pop up.
+
+.enternum-body {
+  background-color: $light--green;
+  overflow: hidden;
+  padding-right: 0;
+  margin-right: 0;
+}
+
+.center-logo-containor {
+  display: grid;
+  place-items: center;
+  min-height: 70vh;
+}
+
+.center-logo {
+  background-color: inherit;
+  width: 6.3%;
+  height: auto;
+}
+
+.center-logo_img {
+  max-width: 150px;
+  height: 150px;
+}
+
+.number-panel {
+  width: 100%;
+  height: 35%;
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.disable-selection {
+  user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.number-welcome-text {
+  font-weight: 700;
+  font-size: 20px;
+  font-family: iranyekan500;
+}
+
+.number-panel_content-container {
+  height: 85%;
+  margin: 36px 25px 0 25px;
+}
+
+.number-des {
+  margin-top: 33px;
+  font-size: 16px;
+  font-family: iranyekan100;
+  font-weight: 600;
+  // color: $darker-gray--color;
+  color: black;
+}
+
+.number-panel_input-field {
+  margin-top: 37px;
+}
+
+.num-label {
+  font-size: 16px;
+  font-family: iranyekan500;
+  font-weight: 600;
+}
+
+.number-panel_phone-input {
+  border: none;
+  border-bottom-width: 1px;
+  border-bottom-color: rgba(0, 0, 0, 0.158);
+  border-bottom-style: solid;
+  outline: none;
+  width: 99.2%;
+  margin-top: 15px;
+  height: 49px;
+  font-size: 16px;
+  font-family: iranyekan100;
+  font-weight: -100;
+  padding-right: 13px;
+  // font-weight: 800;
+  background: url(../images/green-dot.png) no-repeat scroll 7px 23px;
+  background-size: 9px;
+
+  &::placeholder {
+    font-family: iranyekan300;
+  }
+
+  &:focus::placeholder:active {
+    color: transparent;
+  }
+
+  &:focus {
+    border-bottom-width: 1px;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    width: 99.2%;
+  }
+}
+
+.number-panel_submit {
+  width: 6%;
+  height: 43px;
+  border-color: transparent;
+  border-radius: 5px;
+  background-color: #00cc6d;
+  color: white;
+  font-family: iranyekan800;
+  float: left;
+  margin-top: 20pt;
+
+  &:hover {
+    background-color: $light--green--color--2;
+  }
+  &:active {
+    background-color: #07b864;
+  }
+}
+
+//Classes For JS :
+//TODO: add some animations
+.fullscreen_numpanel {
+  // padding-top: 200px;
+  width: 100%;
+  height: 100%;
+}
+.fullscreen_numpanel-margin {
+  margin-top: -8px;
+}
+
+.number-panel_exit-button {
+  margin: 10px 7px 0 0;
+  width: 2.5%;
+  height: 5.1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background-color: $light-gray--color--2;
+    border-radius: 60px;
+  }
+
+  &:active {
+    background-color: $light-gray--color;
+    border-radius: 60px;
+  }
+}
+
+.exit-button_img {
+  width: 17px;
+  display: flex;
+  // margin: 22px 22px 0 0;
+  height: auto;
+}
+.display-none {
+  display: none;
+}
+
+.number-panel_change-language {
+  height: 40px;
+  float: left;
+  padding-left: 29px;
+  padding-right: 15px;
+  padding-top: 7px;
+  background: url(../images/green-globe-icon.png) no-repeat scroll 13px;
+  background-size: 11px;
+
+  &:hover {
+    background-color: $light-gray--color--2;
+  }
+
+  &:active {
+    background-color: $light-gray--color;
+  }
+}
+
+//Animations
+.bring-up-ani {
+  animation: bring-up 0.6s;
+  -o-animation: bring-up 0.6s;
+  -moz-animation: bring-up 0.6s;
+  -webkit-animation: bring-up 0.6s;
+}
+
+.bring-up-fullscreen {
+  animation: bring-up-fullscreen 0.6s;
+  -o-animation: bring-up-fullscreen 0.6s;
+  -moz-animation: bring-up-fullscreen 0.6s;
+  -webkit-animation: bring-up-fullscreen 0.6s;
+}
+
+.bring-down-ani {
+  animation: bring-down 0.6s;
+  -o-animation: bring-down 0.6s;
+  -moz-animation: bring-down 0.6s;
+  -webkit-animation: bring-down 0.6s;
+}

@@ -21,6 +21,15 @@
 @import "pages/home";
 @import "pages/about";
 @import "pages/contact";
+//Added
+@import "pages/otpCustomerAndSamplerEnterNumber";
+@import "pages/otpCustomerAndSamplerEnterCode";
+@import "pages/otpCustomerAndSamplerLogin";
+@import "components/animations";
+//------------
 
 @import "themes/theme";
 @import "themes/admin";
+
+//Font family
+@import "base/fontFamily";
