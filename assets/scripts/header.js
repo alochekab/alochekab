@@ -13,7 +13,7 @@ const resetBorder = function (idName) {
 const addBottomBorder = function (liName) {
   navLi1.classList.remove("temp-select");
   liName.style.borderBottomWidth = "2px";
-  liName.style.borderBottomColor = "green";
+  liName.style.borderBottomColor = "#006a6d";
   liName.style.borderBottomStyle = "solid";
 };
 
