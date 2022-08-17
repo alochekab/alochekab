@@ -722,14 +722,14 @@ input:focus + .label {
   border-bottom-color: rgba(0, 0, 0, 0.158);
   border-bottom-style: solid;
   outline: none;
-  width: 99.2%;
-  margin-top: 15px;
-  height: 49px;
+  width: 97.2%;
+  margin-top: 23px;
+  height: 19px;
   font-size: 16px;
   font-family: iranyekan100;
   font-weight: -100;
   padding-right: 13px;
-  background: url(../images/green-dot.png) no-repeat scroll 7px 23px;
+  background: url(../images/gray-dot.png) no-repeat scroll 7px 23px;
   background-size: 9px; }
   .number-panel_phone-input::placeholder {
     font-family: iranyekan300; }
@@ -739,10 +739,13 @@ input:focus + .label {
     border-bottom-width: 1px;
     border-bottom-color: black;
     border-bottom-style: solid;
-    width: 99.2%; }
+    width: 97.2%;
+    background: url(../images/appcolor-dot.png) no-repeat scroll 7px 23px;
+    background-size: 9px; }
 
 .number-panel_submit {
   width: 6%;
+  font-size: 16px;
   height: 43px;
   border-color: transparent;
   border-radius: 5px;
@@ -794,7 +797,7 @@ input:focus + .label {
   padding-left: 29px;
   padding-right: 15px;
   padding-top: 7px;
-  background: url(../images/green-globe-icon.png) no-repeat scroll 13px;
+  background: url(../images/globe-icon-appcolor.png) no-repeat scroll 13px;
   background-size: 11px; }
   .number-panel_change-language:hover {
     background-color: #fafafa; }
