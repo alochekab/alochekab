@@ -8,30 +8,51 @@
     <title>Login Page</title>
   </head>
   <body class="login-page disable-selection">
-    <div class="l-input">
-      <div class="l-input_first-name">
-        <div class="wrapper">
-          <input type="text" />
-          <label class="label">نام</label>
-          <div class="bar"></div>
-        </div>
-      </div>
-      <div class="l-input_last-name">
-        <div class="wrapper">
-          <input type="text" />
-          <label class="label">نام خانوادگی</label>
-          <div class="bar"></div>
-        </div>
-      </div>
-      <div class="l-input_account-type">
-        <div class="wrapper">
-          <input type="text" />
-          <label class="label">نوع اکانت</label>
-          <div class="bar"></div>
-        </div>
-      </div>
+    <div class="input-container">
+      <form action="" novalidate class="login-page_form">
+        <fieldset class="login-page_field">
+          <label
+            for="first-name"
+            class="login-label"
+            id="login-label_first-name"
+          >
+            نام</label
+          >
+          <input
+            type="text"
+            name="first-name"
+            placeholder="مثلا 09123456789"
+            class="login-page_input"
+            id=""
+            required="true"
+          />
+          <div class="input_last-name-container">
+            <label for="last-name" class="login-label">نام خانوادگی</label>
+            <input
+              type="text"
+              name="last-name"
+              placeholder="مثلا 09123456789"
+              class="login-page_input"
+              id=""
+              required="true"
+            />
+
+            <div class="input_email-container">
+              <label for="last-name" class="login-label"> ایمیل </label>
+              <input
+                type="text"
+                name="last-name"
+                placeholder="مثلا 09123456789"
+                class="login-page_input"
+                id=""
+                required="true"
+              />
+            </div>
+          </div>
+        </fieldset>
+      </form>
     </div>
 
-    <script src="../assets/scripts/login-page.js"></script>
+    <!-- <script src="../assets/scripts/login-page.js"></script> -->
   </body>
 </html>
