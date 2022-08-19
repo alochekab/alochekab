@@ -18,7 +18,6 @@
 }
 
 .input-container {
-  // background-color: antiquewhite;
   margin-top: 3em;
   width: 100%;
   height: 65rem;
@@ -81,7 +80,6 @@
   align-items: center;
   width: 100%;
   margin: 9vh 0 0 0;
-  // background-color: #c3e2f746;
   height: 7em;
 }
 
@@ -107,6 +105,32 @@
   align-items: center;
   width: 8.2%;
   border-radius: 6px;
+  &:hover {
+    background-color: $light-gray--color--2;
+  }
+  &:active {
+    background-color: $light-gray--color;
+  }
+}
+
+.login-page_save {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 16px;
+  float: left;
+  font-size: 16px;
+  text-decoration: none;
+  &:hover,
+  &:active,
+  &:visited {
+    color: inherit;
+  }
+  border-radius: 100px;
+  width: 50px;
+  height: 50px;
+
   &:hover {
     background-color: $light-gray--color--2;
   }
