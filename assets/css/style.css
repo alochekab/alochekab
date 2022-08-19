@@ -829,11 +829,17 @@ input:focus + .label {
   box-sizing: border-box;
   overflow: hidden; }
 
+.user-information-login {
+  font-size: 24px;
+  font-family: iranyekan500;
+  font-weight: 600;
+  margin: 39px 22px 0 0; }
+
 .login-page_form {
-  padding-top: 100px; }
+  padding-top: 10px; }
 
 .input-container {
-  margin-top: 19em;
+  margin-top: 3em;
   width: 100%;
   height: 65rem; }
 
@@ -841,7 +847,7 @@ input:focus + .label {
   margin-right: 29px;
   margin-left: 14px;
   font-size: 16px;
-  font-family: iranyekan500;
+  font-family: iranyekannormal;
   font-weight: 600; }
 
 .login-page_input {
@@ -851,8 +857,8 @@ input:focus + .label {
   border-bottom-style: solid;
   outline: none;
   width: 95%;
-  margin-top: 15px;
-  margin-bottom: 34px;
+  margin-top: 7px;
+  margin-bottom: 29px;
   margin-right: 20px;
   height: 19px;
   font-size: 16px;
@@ -872,6 +878,31 @@ input:focus + .label {
     width: 95%;
     background: url(../images/appcolor-dot.png) no-repeat scroll 7px 23px;
     background-size: 9px; }
+
+.log-out-footer {
+  width: 100%;
+  margin: 9vh 0 0 0;
+  height: 7em; }
+  .log-out-footer hr {
+    border-width: 1px;
+    border-color: rgba(175, 172, 172, 0.082); }
+  .log-out-footer .log-out-footer_hr {
+    position: absolute;
+    bottom: 2.99999em;
+    width: 100%; }
+
+.log-out-footer_a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .log-out-footer_a p {
+    font-size: 16px;
+    font-family: iranyekannormal;
+    font-weight: bold;
+    color: #c63b49; }
+  .log-out-footer_a:hover, .log-out-footer_a:active, .log-out-footer_a:visited {
+    color: inherit; }
 
 @keyframes bring-up {
   0% {

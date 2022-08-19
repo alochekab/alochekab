@@ -8,6 +8,13 @@
     <title>Login Page</title>
   </head>
   <body class="login-page disable-selection">
+    <div class="back-arrow-container content-container">
+      <img
+        class="back-arrow-icon"
+        src="../assets/images/right-arrow-icon.png"
+      />
+    </div>
+    <p class="user-information-login">اطلاعات کاربری</p>
     <div class="input-container">
       <form action="" novalidate class="login-page_form">
         <fieldset class="login-page_field">
@@ -16,21 +23,21 @@
             class="login-label"
             id="login-label_first-name"
           >
-            نام</label
+            نام و نام خانوادگی</label
           >
           <input
             type="text"
-            name="first-name"
-            placeholder="مثلا 09123456789"
+            name="full-name"
+            placeholder="نام و نام خانوادگی خود را وارد کنید."
             class="login-page_input"
             id=""
             required="true"
           />
           <div class="input_last-name-container">
-            <label for="last-name" class="login-label">نام خانوادگی</label>
+            <label for="phone-number" class="login-label">شماره موبایل </label>
             <input
               type="text"
-              name="last-name"
+              name="phone-number"
               placeholder="مثلا 09123456789"
               class="login-page_input"
               id=""
@@ -38,16 +45,57 @@
             />
 
             <div class="input_email-container">
-              <label for="last-name" class="login-label"> ایمیل </label>
+              <label for="email-address" class="login-label"> ایمیل </label>
               <input
                 type="text"
-                name="last-name"
-                placeholder="مثلا 09123456789"
+                name="email-address"
+                placeholder="example@example.com"
                 class="login-page_input"
                 id=""
                 required="true"
               />
             </div>
+
+            <div class="input_email-container">
+              <label for="address" class="login-label"> آدرس </label>
+              <input
+                type="text"
+                name="address"
+                placeholder="آدرس خود را وارد کنید."
+                class="login-page_input"
+                id=""
+                required="true"
+              />
+            </div>
+
+            <div class="input_email-container">
+              <label for="gender" class="login-label"> جنسیت </label>
+              <input
+                type="text"
+                name="gender"
+                placeholder="جنسیت خود را انتخاب کنید."
+                class="login-page_input"
+                id=""
+                required="true"
+              />
+            </div>
+
+            <div class="input_email-container">
+              <label for="birth-date" class="login-label"> تاریخ تولد </label>
+              <input
+                type="text"
+                name="birth-date"
+                placeholder="تاریخ تولد خود را انتخاب کنید."
+                class="login-page_input"
+                id=""
+                required="true"
+              />
+            </div>
+          </div>
+          <div class="log-out-footer">
+            <hr />
+            <a href="#" class="log-out-footer_a"><p>خروج از حساب کاربری</p></a>
+            <hr class="log-out-footer_hr" />
           </div>
         </fieldset>
       </form>
