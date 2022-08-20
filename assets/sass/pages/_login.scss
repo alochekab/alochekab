@@ -4,111 +4,137 @@
   padding: 0;
   box-sizing: border-box;
   overflow: hidden;
-  // background-color: gray;
 }
 
-.l-input {
-  background-color: gray;
-  height: 40rem;
+.user-information-login {
+  font-size: 24px;
+  font-family: iranyekan500;
+  font-weight: 600;
+  margin: 39px 22px 0 0;
 }
 
-.l-input_first-name {
-  // background-color: gray;
-  width: 70%;
-  display: flex;
-  justify-items: center;
-  align-items: center;
-  margin: 40px 120px 0 0;
-}
-.l-input_last-name {
-  width: 70%;
-  display: flex;
-  justify-items: center;
-  align-items: center;
-  margin: 40px 120px 0 0;
+.login-page_form {
+  padding-top: 10px;
 }
 
-.l-input_account-type {
-  width: 70%;
-  display: flex;
-  justify-items: center;
-  align-items: center;
-  margin: 40px 120px 0 0;
-}
-
-//inputstyle
-input {
+.input-container {
+  margin-top: 3em;
   width: 100%;
-  // max-width: 100%;
-  @include phone {
-    padding: 1.5rem;
-  }
-  padding: 1.5rem 4rem;
-  border-radius: 0.4rem;
-  border: 0.1rem solid #d9d9d9;
+  height: 65rem;
+}
+
+.login-label {
+  margin-right: 29px;
+  margin-left: 14px;
+  font-size: 16px;
+  font-family: iranyekannormal;
+  font-weight: 600;
+}
+
+.login-page_input {
+  border: none;
+  border-bottom-width: 1px;
+  border-bottom-color: rgba(0, 0, 0, 0.158);
+  border-bottom-style: solid;
   outline: none;
-  line-height: 2rem;
+  width: 95%;
+  margin-top: 7px;
+  margin-bottom: 29px;
+  margin-right: 20px;
+  height: 19px;
+  font-size: 16px;
+  font-family: iranyekan100;
+  font-weight: -100;
+  padding-right: 13px;
+  background: url(../images/gray-dot.png) no-repeat scroll 7px 23px;
+  background-size: 9px;
+  &::placeholder {
+    font-family: iranyekan300;
+  }
+
+  &:focus::placeholder:active {
+    color: transparent;
+  }
+
+  &:focus {
+    border-bottom-width: 1px;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    width: 95%;
+    background: url(../images/appcolor-dot.png) no-repeat scroll 7px 23px;
+    background-size: 9px;
+  }
 }
 
-.wrapper {
-  box-shadow: 0 0.6rem 2rem -0.5rem rgba($color: #000000, $alpha: 0.1);
-  display: inline-block;
-  position: relative;
-  width: 100%;
+.log-out-footer {
+  border-top-width: 1px;
+  border-top-color: rgba(153, 149, 149, 0.192);
+  border-top-style: solid;
+
+  border-bottom-width: 1px;
+  border-bottom-color: rgba(153, 149, 149, 0.192);
+  border-bottom-style: solid;
 
   display: flex;
-  justify-items: center;
+  justify-content: center;
   align-items: center;
-}
-
-.label {
-  font-size: 1.6rem;
-  @include phone {
-    font-size: 1.5rem;
-  }
-  position: absolute;
-  top: 50%;
-  right: 0.1rem;
-  transform: translateY(-50%);
-  line-height: 2rem;
-  padding-right: 0.7rem;
-  color: #80868b;
-  transition: all 0.2s ease-in-out;
-}
-
-.label-old {
-  position: absolute;
-  top: 0;
-  left: 1rem;
-  background: $white--color;
-  transform: translateY(-50%);
-  line-height: 2rem;
-  padding-left: 5rem;
-  color: $app--color;
-}
-
-.bar {
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  background: $app--color;
-  width: 0%;
-  height: 0.2rem;
-  transition: all 0.5s ease-in-out;
-}
-
-input:focus ~ .bar {
   width: 100%;
-  left: 0;
+  margin: 9vh 0 0 0;
+  height: 7em;
 }
 
-input:focus + .label {
-  position: absolute;
-  top: 0;
-  right: 1rem;
-  background: $white--color;
-  transform: translateY(-50%);
-  line-height: 2rem;
-  padding-right: 0.5rem;
-  color: $app--color;
+.log-out-footer_a {
+  text-decoration: none;
+  & p {
+    font-size: 16px;
+    font-family: iranyekannormal;
+    font-weight: bold;
+    color: $red--color--2;
+  }
+
+  &:hover,
+  &:active,
+  &:visited {
+    color: inherit;
+  }
+}
+
+.log-out-footer_hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8.2%;
+  border-radius: 6px;
+  &:hover {
+    background-color: $light-gray--color--2;
+  }
+  &:active {
+    background-color: $light-gray--color;
+  }
+}
+
+.login-page_save {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 16px;
+  float: left;
+  font-size: 16px;
+  text-decoration: none;
+  &:hover,
+  &:active,
+  &:visited {
+    color: inherit;
+  }
+  border-radius: 100px;
+  width: 50px;
+  height: 50px;
+
+  &:hover {
+    background-color: $light-gray--color--2;
+  }
+  &:active {
+    background-color: $light-gray--color;
+  }
 }
