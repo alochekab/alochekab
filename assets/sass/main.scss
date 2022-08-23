@@ -27,20 +27,20 @@
 @import "pages/about";
 @import "pages/contact";
 @import "pages/download";
-//Added
-@import "pages/otpCustomerAndSamplerEnterNumber";
-@import "pages/otpCustomerAndSamplerEnterCode";
-@import "pages/otpCustomerAndSamplerLogin";
+
+@import "pages/otp-enter-code";
+@import "pages/otp-enter-number";
+@import "pages/login";
 @import "components/animations";
-//------------
+
 
 @import "themes/theme";
 @import "themes/admin";
 
 
-
-//Font family
 @import "base/fontFamily";
 
 
+
  
+
