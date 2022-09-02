@@ -1,0 +1,44 @@
+.feedback-page {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.feedback-parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.feedback-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  height: 450px;
+  box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+}
+
+.feedback_title {
+  font-family: iranyekan500;
+  font-weight: bold;
+  font-size: 22px;
+  // text-align: center;
+
+  margin: 27px 26px 0 0;
+}
+
+.feedback_emojis {
+  width: 90%;
+  height: 20%;
+  background-color: gray;
+  margin: 30px 20px 0 0;
+
+  & img {
+    width: 67px;
+    height: auto;
+  }
+}
