@@ -1257,17 +1257,33 @@ input:focus + .label {
   border-radius: 16px;
   border: 3px solid #006a6d; }
 
-.feedback_exit_container img {
-  width: 22px;
-  height: auto;
+.feedback_exit_container {
   float: left;
-  margin: -29px 0 0 27px; }
+  width: 43px;
+  height: 43px;
+  border-radius: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -47px 0 0 12px; }
+  .feedback_exit_container img {
+    width: 20px;
+    height: auto;
+    float: left; }
+  .feedback_exit_container:hover {
+    background-color: #fafafa; }
+  .feedback_exit_container:active {
+    background-color: #f5f5f5; }
 
 .feedback_title {
   font-family: iranyekan500;
   font-weight: bold;
   font-size: 22px;
   margin: 27px 28px 0 0; }
+
+.feedback {
+  width: 14px;
+  height: auto; }
 
 .feedback_emojis {
   width: 90%;
@@ -1278,11 +1294,13 @@ input:focus + .label {
   justify-content: center;
   gap: 7px; }
   .feedback_emojis img {
-    width: 59px;
-    height: auto; }
+    width: 58px;
+    height: 58px; }
     .feedback_emojis img:hover {
-      width: 65px;
-      height: auto; }
+      width: 67px;
+      height: auto;
+      filter: blur(0px);
+      -webkit-filter: blur(0px); }
 
 .feedback_textbox {
   margin: 20px 17px 0 19px;
@@ -1296,24 +1314,37 @@ input:focus + .label {
   margin: 0px 10px 0 0; }
 
 .feedback_textbox_textarea {
-  width: 93%;
+  width: 90%;
   height: 13vh;
-  margin: 7px 9px 0 0;
+  margin: 7px 6px 0 0;
   padding: 0;
   outline: none;
   border: 1px solid black;
   border-radius: 10px;
-  resize: none; }
+  resize: none;
+  padding: 9px 9px 9px 9px;
+  font-size: 14px;
+  font-family: iranyekannormal; }
 
 .feedback_textbox button {
   width: 16rem;
   height: 33px;
-  margin: 40px 14px 0 0;
+  margin: 32px 14px 0 0;
   font-size: 16px;
   font-family: iranyekan500;
   padding: 0;
   text-align: center;
   border-radius: 0; }
+
+.feedback-select-blur img {
+  filter: blur(1px);
+  -webkit-filter: blur(1px); }
+
+.feedback-select-test img {
+  width: 67px;
+  height: 67px;
+  filter: blur(0px);
+  -webkit-filter: blur(0px); }
 
 @keyframes bring-up {
   0% {
