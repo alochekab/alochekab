@@ -1,0 +1,140 @@
+.login-page {
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.user-information-login {
+  font-size: 24px;
+  font-family: iranyekan500;
+  font-weight: 600;
+  margin: 39px 22px 0 0;
+}
+
+.login-page_form {
+  padding-top: 10px;
+}
+
+.input-container {
+  margin-top: 3em;
+  width: 100%;
+  height: 65rem;
+}
+
+.login-label {
+  margin-right: 29px;
+  margin-left: 14px;
+  font-size: 16px;
+  font-family: iranyekannormal;
+  font-weight: 600;
+}
+
+.login-page_input {
+  border: none;
+  border-bottom-width: 1px;
+  border-bottom-color: rgba(0, 0, 0, 0.158);
+  border-bottom-style: solid;
+  outline: none;
+  width: 95%;
+  margin-top: 7px;
+  margin-bottom: 29px;
+  margin-right: 20px;
+  height: 19px;
+  font-size: 16px;
+  font-family: iranyekan100;
+  font-weight: -100;
+  padding-right: 13px;
+  background: url(../images/gray-dot.png) no-repeat scroll 7px 23px;
+  background-size: 9px;
+  &::placeholder {
+    font-family: iranyekan300;
+  }
+
+  &:focus::placeholder:active {
+    color: transparent;
+  }
+
+  &:focus {
+    border-bottom-width: 1px;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    width: 95%;
+    background: url(../images/appcolor-dot.png) no-repeat scroll 7px 23px;
+    background-size: 9px;
+  }
+}
+
+.log-out-footer {
+  border-top-width: 1px;
+  border-top-color: rgba(153, 149, 149, 0.192);
+  border-top-style: solid;
+
+  border-bottom-width: 1px;
+  border-bottom-color: rgba(153, 149, 149, 0.192);
+  border-bottom-style: solid;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 9vh 0 0 0;
+  height: 7em;
+}
+
+.log-out-footer_a {
+  text-decoration: none;
+  & p {
+    font-size: 16px;
+    font-family: iranyekannormal;
+    font-weight: bold;
+    color: $red--color--2;
+  }
+
+  &:hover,
+  &:active,
+  &:visited {
+    color: inherit;
+  }
+}
+
+.log-out-footer_hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8.2%;
+  border-radius: 6px;
+  &:hover {
+    background-color: $light-gray--color--2;
+  }
+  &:active {
+    background-color: $light-gray--color;
+  }
+}
+
+.login-page_save {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 16px;
+  float: left;
+  font-size: 16px;
+  text-decoration: none;
+  &:hover,
+  &:active,
+  &:visited {
+    color: inherit;
+  }
+  border-radius: 100px;
+  width: 50px;
+  height: 50px;
+
+  &:hover {
+    background-color: $light-gray--color--2;
+  }
+  &:active {
+    background-color: $light-gray--color;
+  }
+}

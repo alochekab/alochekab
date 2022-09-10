@@ -31,12 +31,19 @@
     &--text{
         display: flex;
         flex-direction: column;
+		@include phone{
+			font-size: 1.3rem;	
+		}
     }
 
 }
 
 
 .imgg{
+	@include phone{
+		width:100px;
+		height:100px;	
+	}
 	width:150px;
 	height:150px;
 	border-radius:10px;
