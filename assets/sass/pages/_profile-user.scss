@@ -1,0 +1,49 @@
+
+.profile-user{
+
+    margin: 0.5rem;
+
+    &__header{
+       
+        text-align: center;
+    }
+
+    &__user{
+
+        font-size: 2rem;
+        direction: rtl;
+        padding: 1.5rem;
+
+        &--name{
+            margin: 1rem;
+        }
+
+        &--phone{
+            margin: 1rem;
+        }
+    }
+
+    &__info{
+        font-size: 2rem;
+        direction: rtl;
+        margin: 1.5rem;
+    }
+
+    &__link{
+        display: block;
+        color: $black--color--1;
+        text-decoration: none;
+        padding: 1rem;
+    }
+
+    &__button2{
+
+        color: #be272c;
+        border:0.2rem solid #be272c;
+        &:hover{
+            background-color: #be272c; //red-coloe
+        }
+        
+
+    }
+}

@@ -1,0 +1,83 @@
+
+.text-file{
+    margin: 2rem;
+}
+
+.container-ticket{
+    direction: rtl;
+    font-size: 1.8rem;
+  
+
+   
+    &__chats{
+        display: flex;
+        flex-direction: column;
+        overflow: scroll;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+        height: auto;
+    }
+
+    &__chat{
+    border: 2px solid $darker-gray--color;
+    margin: 1.5rem;
+    padding: 2.5rem;
+    box-shadow: 2px 2px 8px rgba($color: #000000, $alpha: 0.5);
+
+    &:hover{
+        background-color:rgba($darker-gray--color, $alpha: 0.7) ;
+    }
+    
+   
+    }
+
+    &__chat1{
+        
+        background-color: $light-gray--color;
+        
+        &--time{
+            float: left;
+        }
+    }
+
+    &__chat2{
+        color: $light-gray--color;
+        background-color: rgba($black--color--2, $alpha: 0.65);
+
+        &--time{
+            float: right;
+        }
+    }
+
+
+}
+
+.ticket-send{
+    
+    position: sticky;
+    
+    bottom: 0;
+    background-color: $white--color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__text-box{
+    width: 98%;
+    height: 7rem;
+    border: 2px solid $app--color;
+    padding: 2rem;
+    border-radius: 0.4rem;
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+   
+}
+}
+
+
+.ticket-header{
+    direction: rtl;
+    margin: 2rem;
+   
+}

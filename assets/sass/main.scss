@@ -15,6 +15,11 @@
 @import "components/buttons";
 @import "components/carousel";
 @import "components/slider";
+
+@import "components/alert";
+@import "components/modal";
+@import "components/card";
+
 @import "components/input";
 @import "components/checkbox";
 
@@ -23,14 +28,26 @@
 @import "pages/contact";
 @import "pages/request";
 //Added
-@import "pages/otpCustomerAndSamplerEnterNumber";
-@import "pages/otpCustomerAndSamplerEnterCode";
-@import "pages/otpCustomerAndSamplerLogin";
+@import "pages/otp-enter-code";
+@import "pages/otp-enter-number";
+@import "pages/otp-customer-login";
+@import "pages/otp-sampler-login";
+@import "pages/textFile";
+@import "pages/showAllTickets";
+@import "pages/reserves-pages.scss";
+@import "pages/profile-user";
+
+
 @import "components/animations";
 //------------
 
 @import "themes/theme";
 @import "themes/admin";
 
+
+
 //Font family
 @import "base/fontFamily";
+ 
+
+
