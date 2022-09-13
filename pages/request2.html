@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fa-IR">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../assets/css/style.css">
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/css/bootstrap-select.min.css" />
+    
+	<title>Request2</title>
+</head>
+<body dir="rtl">
+
+	<div class="request-header__container">
+		<div class="request-header__container--content">با نسخه</div>
+		<div class="request-header__container--content">بدون نسخه</div>
+	</div>
+
+	<div class="request-input__container">
+			
+          <div class="drop-zone">
+            <span class="drop-zone__prompt">فایل را بکشید و رها کنید</span>
+            <input type="file" name="myFile" class="drop-zone__input">
+          </div>
+
+		  <div class="insurance-is">
+			<div class="checkbox">
+				<label class="toggle request__toggle">
+					<input class="toggle-checkbox" type="checkbox">
+					<div class="toggle-switch"></div>
+					<span class="toggle-label request__toggle-label">بیمه دارید</span>
+				  </label>
+			</div>
+		  </div>
+
+		  
+		  <div class="insurance-kind">
+			<label class="request__label">نوع بیمه</label>
+			<select class="selectpicker" data-show-subtext="true" data-live-search="true">
+				<option value="" disabled selected hidden>انتخاب کنید</option>
+				<option value="تامین اجتماعی">تامین اجتماعی</option>
+				<option value="سللامت">سلامت</option>
+			  </select>
+		  </div>
+		  
+
+		  <div class="insurance-num">
+			<label for="">شماره بیمه</label>
+			<input type="number" class="request__input--style">
+		  </div>
+
+
+		  <div class="insurance-discount">
+			<label>کد تخفیف خود را وارد کنید</label>
+			<input type="text" class="request__input--style">
+		  </div>
+
+
+			  <div class="request__address">
+				<label>آدرس باجزئیات</label>
+				<input type="text" class="request__input--style">
+			  </div>
+
+			  <div class="request__specialist">
+				<div class="checkbox">
+					<label class="toggle request__toggle">
+						<input class="toggle-checkbox" type="checkbox">
+						<div class="toggle-switch"></div>
+						<span class="toggle-label request__toggle-label">نیاز به پزشک متخصص</span>
+					  </label>
+				</div>
+			  </div>
+			  <br>
+
+			  <button class="button buttontext request__button">درخواست</button>
+	</div>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/js/bootstrap-select.min.js"></script>
+  <script src="../assets/scripts/file-upload.js"></script>
+</body>
+</html>
