@@ -1,0 +1,138 @@
+.feedback-page {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.feedback-parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.feedback-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  height: 450px;
+  box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  border: 3px solid $app--color;
+}
+
+.feedback_exit_container {
+  float: left;
+  width: 43px;
+  height: 43px;
+  border-radius: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -47px 0 0 12px;
+
+  & img {
+    width: 20px;
+    height: auto;
+    float: left;
+  }
+
+  &:hover {
+    background-color: $light-gray--color--2;
+  }
+
+  &:active {
+    background-color: $light-gray--color;
+  }
+}
+
+.feedback_title {
+  font-family: iranyekan500;
+  font-weight: bold;
+  font-size: 22px;
+  margin: 27px 28px 0 0;
+}
+
+.feedback {
+  width: 14px;
+  height: auto;
+}
+
+.feedback_emojis {
+  width: 90%;
+  height: 20%;
+  margin: 20px 20px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  & img {
+    width: 58px;
+    height: 58px;
+    &:hover {
+      width: 67px;
+      height: auto;
+      filter: blur(0px);
+      -webkit-filter: blur(0px);
+    }
+  }
+}
+
+.feedback_textbox {
+  margin: 20px 17px 0 19px;
+  width: 93%;
+  height: 40%;
+}
+
+.feedback_textbox_title {
+  font-size: 14px;
+  font-family: iranyekan500;
+  font-weight: 600;
+  margin: 0px 10px 0 0;
+}
+
+.feedback_textbox_textarea {
+  width: 90%;
+  height: 13vh;
+  margin: 7px 6px 0 0;
+  padding: 0;
+  outline: none;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  resize: none;
+  padding: 9px 9px 9px 9px;
+  font-size: 14px;
+  font-family: iranyekannormal;
+}
+
+.feedback_textbox {
+  & button {
+    width: 16rem;
+    height: 33px;
+    margin: 32px 14px 0 0;
+    font-size: 16px;
+    font-family: iranyekan500;
+    padding: 0;
+    text-align: center;
+    border-radius: 0;
+  }
+}
+
+// js classes
+.feedback-select-blur {
+  & img {
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+  }
+}
+.feedback-select-test {
+  & img {
+    width: 67px;
+    height: 67px;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+  }
+}
+//------

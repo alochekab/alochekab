@@ -1,0 +1,100 @@
+
+
+.header-all-tickets{
+
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 5;
+    direction: rtl;
+    padding: 3rem;
+    height: 6rem;
+    background-color: $app--color;
+    color: $white--color;
+    font-size: 1.5rem;
+}
+
+.container-All-tickets{
+
+    direction: rtl;
+    font-size: 1.7rem;
+    
+   
+
+    &__chats{
+        
+        height: 20rem;
+        max-width: 100%;
+        border: 2px solid $app--color;
+        margin: 1.5rem;
+        padding: 1rem 1.5rem;
+        box-shadow: 2px 2px 10px  1px rgba($color: #000000, $alpha: 0.3);
+        position: relative;
+        box-sizing: border-box;
+        word-wrap: break-word;
+
+        
+        
+    
+        &--time{
+            // float: right;
+           
+            margin: 0.5rem;
+            position: absolute;
+            bottom: 1rem;
+            right: 2rem;
+            
+            @include phone {
+                margin: 0rem;
+                bottom: 0.5rem;
+            }
+        }
+
+        &--date{
+            // float: right;
+            margin: 0.5rem;
+            position: absolute;
+            bottom: 1rem;
+            right: 7rem;
+
+            @include phone {
+                margin: 0rem;
+                bottom: 0.5rem;
+            }
+            
+        }
+
+        &--detail{
+            color: $app--color;
+            text-decoration: none;
+            position: absolute;
+            bottom: 1.5rem;
+            left: 2.8rem;
+            margin: 0.8rem;
+            // float: left;
+            &:hover{
+                cursor: pointer;
+                color: $black--color--2;
+            } 
+            
+            
+        }
+
+        &--text{
+            margin: 1rem;
+            font-size: 1.5rem;
+        }
+
+        &--title{
+
+            // bold?
+            font-weight: bold;
+            margin: 0.5rem;
+            font-size: 2.3rem;
+            
+        }
+
+    }
+}
+

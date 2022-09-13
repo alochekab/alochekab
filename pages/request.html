@@ -1,98 +1,209 @@
 <!DOCTYPE html>
 <html lang="fa-IR">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="../assets/css/style.css">
-	<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/css/bootstrap-select.min.css" />
-	<title>Request</title>
+	<title>Leaflet.Control.Gps - Simple Example</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+
+	<link rel="stylesheet" href="../components/map/dist/leaflet.css" />
+
+	<link rel="stylesheet" href="../components/map/src/leaflet-gps.css" />
+	<!-- <link rel="stylesheet" href="../components/map/style.css" /> -->
+	<link rel="stylesheet" href="../assets/css/style.css" />
 </head>
 <body dir="rtl">
 
-	<div class="request-header__container">
-		<div class="request-header__container--content">با نسخه</div>
-		<div class="request-header__container--content">بدون نسخه</div>
-	</div>
+<body>
 
-	<div class="request-input__container">
+<div class="page">
+			<div id="map"></div>
+
+		<input type="hidden" id="location">
+
+		<script src="../components/map/dist/leaflet.js"></script>
+		<script src="../components/map/src/leaflet-gps.js"></script>
+		<script>
+			let active = false
+			// config map
+			var map = new L.Map('map',
+				{
+					zoom: 12,
+					center: new L.latLng([35.70163, 51.39211]),
+
+				});
+			//  google layer map
+			googleStreets = L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
+				maxZoom: 20,
+
+				subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
+			});
+			var loc = L.icon({
+				iconUrl: '../components/map/images/locationPin-01.png',
+				shadowUrl: '../components/map/images/locationPin_Shade.png',
+				iconSize: [100, 100], // size of the icon
+				shadowSize:   [50, 64], // size of the shadow
+				iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+				shadowAnchor: [0, 25],  // the same for the shadow
+				popupAnchor:  [30, -80] // point from which the popup should open relative to the iconAnchor
+			});
+			var marker2 = L.marker(
+				[35.70163, 51.39211],
+				{
+					draggable: false,
+					title: "",
+					opacity: 1,
+					icon: loc,
+
+
+				});
+
+
+			//base layer
+			map.addLayer(googleStreets);
+
+			var gps = new L.Control.Gps({
+				// autoActive:true,
+				autoCenter: true
+
+			});//inizialize control
+
+			gps
+				.on('gps:located', function (e) {
+					// e.marker.bindPopup(e.latlng.toString()).openPopup()
+					// console.log(e.latlng, map.getCenter())
+					// console.log(map['_lastCenter']);
+					marker2.setLatLng(new L.LatLng(map['_lastCenter']['lat'], map['_lastCenter']['lng']))
+					map.locate({ setView: true, maxZoom: 18 });
+
+
+
+				})
+				.on('gps:disabled', function (e) {
+					e.marker.closePopup()
+					marker2.setLatLng(new L.LatLng(map['_lastCenter']['lat'], map['_lastCenter']['lng']))
+					map.locate({ setView: true, maxZoom: 18 });
+
+
+				});
+
+			// isactive gps btn
+			gps.addTo(map);
+			// **********************************
+			// **********************************
+			// **********************************
+			map.locate({ setView: true, maxZoom: 25 });
+			setTimeout(() => {
+				marker2.setLatLng(new L.LatLng(map['_lastCenter']['lat'], map['_lastCenter']['lng']))
+			}, 1000);
+
+			// **********************************
+			// **********************************
+			// **********************************
+
+			// position fixed marker
+			map.on('move', function () {
+				marker2.setLatLng(map.getCenter());
+				//console.log(map.getCenter());
+			});
+			//Dragend event of map for update marker position
+			map.on('dragend', function (e) {
+				var cnt = map.getCenter();
+				var position = marker2.getLatLng();
+				lat = Number(position['lat']).toFixed(5);
+				lng = Number(position['lng']).toFixed(5);
+
+			});
+
+			// **********************************
+			// **********************************
+			// **********************************
+			// end select 
+			marker2.addTo(map);
+
+			document.querySelector('.leaflet-marker-icon').addEventListener('click', function () {
+				document.querySelector('#location').value = marker2['_latlng']
+				map.locate({ setView: true, maxZoom: 18 });
+				document.querySelector('.alarm').classList.add('active')
+				document.querySelector('.alarm').innerHTML = marker2
+
+			})
+			// add marker on click
+
+				map.on("click", addMarker);
 			
-			<div class="test__name">
-			  <label class="request__label">نام آزمایش</label>
-				<select class="selectpicker " data-show-subtext="true" data-live-search="true">
-					<option value="" disabled selected hidden>انتخاب کنید</option>
-					<option value="کرونا">کرونا</option>
-					<option value="قند خون">قند خون</option>
-					<option value="فشار خون">فشار خون</option>
-				  </select>
-			  
-			</div>
-			
 
-			  <div class="test__price">
-				<label>هزینه</label>
-				<input type="number" class="request__input--style" disabled>
-			  </div>
-
-
-			  <div class="insurance-is">
-				<div class="checkbox">
-					<label class="toggle request__toggle">
-						<input class="toggle-checkbox" type="checkbox">
-						<div class="toggle-switch"></div>
-						<span class="toggle-label request__toggle-label">بیمه دارید</span>
-					  </label>
-				</div>
-			  </div>
-
-			  
-			  <div class="insurance-kind">
-				<label class="request__label">نوع بیمه</label>
-				<select class="selectpicker" data-show-subtext="true" data-live-search="true">
-					<option value="" disabled selected hidden>انتخاب کنید</option>
-					<option value="تامین اجتماعی">تامین اجتماعی</option>
-					<option value="سللامت">سلامت</option>
-				  </select>
-			  </div>
-			  
-
-			  <div class="insurance-num">
-				<label for="">شماره بیمه</label>
-				<input type="number" class="request__input--style">
-			  </div>
+			function addMarker(e) {
+				// Add marker to map at click location
+				const markerPlace = document.querySelector(".marker-position");
+				
+				const marker = new L.marker(e.latlng, {
+					draggable: false,
+					title: "",
+					opacity: 1,
+					icon: loc,
+				})
+					.addTo(map)
+					.bindPopup(alarm);
+					
+				
+				marker2.remove()
 
 
-			  <div class="insurance-discount">
-				<label>کد تخفیف خود را وارد کنید</label>
-				<input type="text" class="request__input--style">
-			  </div>
+				// event remove marker
+				marker.on("popupopen", removeMarker);
 
-			  <div class="request__address">
-				<label>آدرس باجزئیات</label>
-				<input type="text" class="request__input--style">
-			  </div>
+				// event draged marker
+				marker.on("dragend", dragedMaker);
+				map.addEventListener("click", function () {
+					const markerPlace = document.querySelector(".marker-position");
+					map.removeLayer(marker);
+				
+				})
+				
+				console.log(active);
+			}
 
-			  <div class="request__specialist">
-				<div class="checkbox">
-					<label class="toggle request__toggle">
-						<input class="toggle-checkbox" type="checkbox">
-						<div class="toggle-switch"></div>
-						<span class="toggle-label request__toggle-label">نیاز به پزشک متخصص</span>
-					  </label>
-				</div>
-			  </div>
-			  <br>
+			const alarm =
+				'موقعیت مکانی';
 
-			  <button class="button buttontext request__button">درخواست</button>
-			  
-	</div>
-	
+			// remove marker
+			function removeMarker() {
+				const marker = this;
+				const btn = document.querySelector(".remove");
+				marker.addEventListener("click", function () {
+					const markerPlace = document.querySelector(".marker-position");
+					map.removeLayer(marker);
+				});
+			}
 
+			// draged
+			function dragedMaker() {
+				const markerPlace = document.querySelector(".marker-position");
+				markerPlace.textContent = `change position: ${this.getLatLng().lat}, ${this.getLatLng().lng
+					}`;
 
+			}
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/js/bootstrap-select.min.js"></script>
+		</script>
+		<div class="alarm">
+			انتخاب شد
+		</div>
+		<style>
+			.alarm {
+				position: absolute;
+				width: 100%;
+				height: 10rem;
+				background-color: #fff;
+				box-shadow: 0 0 2px 1px #eee;
+				bottom: 0;
+				z-index: 9999;
+				display: none;
+
+			}
+
+			.active.alarm {
+				display: block;
+			}
+		</style>
 </body>
 </html>
